@@ -1,0 +1,21 @@
+/* ----- IE8 - IE10 -------*/
+
+
+
+.overlay, [class*="overlay"] {
+    
+    
+   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#6f5405, endColorstr=#655405);
+} 
+
+
+.no-borderimage .dotted-border {
+    border-image:none;
+    border:1px solid #ccc;
+}
+
+
+footer.footer-main .row nav ul li a p.social_name  {    
+
+                    -ms-transform: translate(50px,100px); /* IE 9 */
+               } 

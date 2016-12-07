@@ -1,0 +1,722 @@
+ // veranstaltungen
+
+
+@import "reset";
+
+
+
+    section.welcome_vst {
+    
+    /*margin: 0;
+    z-index: 6;
+    background-size: cover;
+    
+    background-position: bottom;
+    background-attachment: fixed;
+    height: 20em;
+    min-height: 20em;*/
+
+    display: block;
+    overflow: hidden;
+    position: relative;
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto 1em;
+    max-height: 600em;
+    max-width: 600em;
+    min-height: 30em;
+    background-image: url('../img/sprengel_vst.jpg');
+    background-attachment: fixed;
+
+    h2 {
+
+      color: #c9b76a;
+      font-family: $main-line;
+      font-weight: 100;
+      letter-spacing: 0.065em;
+
+      
+      span {
+
+        color: #FFF;
+        letter-spacing: 0.065em;
+        text-transform: uppercase;
+        font-weight: 100;
+        line-height: 1;
+        text-shadow: -2px 2px 0px transparent, -3px 3px 1px transparent, -4px 4px 2px transparent;
+        font-family: "tungsten","Helvetica Neue",Helvetica,Arial,sans-serif;
+      }
+    }
+}
+
+    .welcome_vst .row.intro {
+    position: relative;
+    top: 40%;
+    transform: translateY(40%);
+    z-index: 6;
+    /*position: absolute;
+     
+    text-align: center;
+    animation: 3s ease-in-out 1s normal both 1 fade-in;
+    white-space:nowrap;
+    margin-left: auto;
+    margin-right: auto;
+    top: 7em;*/
+
+    &::before {
+
+    content: url(../img/veranstaltungen.svg);
+    margin-left: auto;
+    margin-right: auto;  
+    margin-bottom: 0.5em;
+
+    }
+
+    
+    hr.sep {
+
+        width:6%;
+    }
+
+
+
+                 }
+
+
+/****************************************************** allgemein ****************************************************/
+    h1.intro-title .vst {
+
+      font-size: 2em;
+
+    }
+
+
+    .lay_vst, [class*="lay_vst"] {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: block;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    background-color: #000000;
+    opacity: 0.8;
+    transition: background-color 1s ease-in-out 0s;
+}
+
+    .lay_vst_art  {
+    
+    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 40%;
+    bottom: 0;
+    top:60%;
+
+}
+
+.announce_vst_img {
+
+    position:relative;
+    top:70%;  
+    z-index: 9;
+
+
+    hr.sep_vst_art {
+
+   border: 1px solid #ffffff;
+   display:block;
+   width:25%;
+   margin:.1em  auto;
+}
+
+h2 {
+
+    font-size: 3em;
+    font-family: "tungsten","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.065em;
+    text-transform: uppercase;
+    text-align: center;
+
+    br {
+   display: block;
+   margin: 2px 0;
+}
+}
+
+
+}
+
+/****************************************************** überschrift ****************************************************/
+
+.vst_announcement {
+
+            
+            max-width: 40em;
+            margin-left: auto;
+            margin-right: auto;
+
+
+}
+
+.vst_border {   
+            border: none;   
+
+            h2 {
+
+            font-weight: 600;
+            font-size: 1.1em;    
+
+            }
+            p {
+
+            padding-bottom: 1em;
+            }  
+            }  
+
+
+.vst_announcement_pr {
+            position: relative;
+            width: 55%;
+            max-width: 30em;
+            float: left;
+            left: 2em;
+            right: 3%;
+
+}
+/* -------------------------- */
+
+
+     h2.vst_mainlink {
+            font-family:quadon,'Helvetica Neue',Helvetica,Arial,sans-serif;   
+            text-transform: uppercase;
+            color: #968437;
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+ 
+
+
+
+
+
+/* ----------  allgemeine vst style ------ */
+
+
+.btn_access_vst {
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            font-family: "verlag","Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-weight: 600;
+            background: none;
+            text-transform: uppercase;
+            font-size: 1em;
+            line-height: 1em;
+            letter-spacing: 0.1em;
+            color: #b1aea6;
+            border: 3px solid #b1aea6;
+            padding: 0.8em .5em 0.6em;
+            margin-bottom: 3em;
+            outline: 0px none;
+            z-index: 3;
+            white-space: nowrap;
+            -webkit-transition:     all 0.3s ease-in-out;
+            -moz-transition:        all 0.3s ease-in-out;
+            transition:             all 0.3s ease-in-out;
+            
+
+            &:hover {
+
+            color: #322F27;
+            border: 3px solid #322F27;
+          
+            }
+
+            }
+
+
+        article {
+
+       /* padding-top: 1em; */
+
+
+         a.vst_link {
+           display: block;
+           max-height:30em;
+           height: 30em;
+           background-attachment: fixed;
+        } 
+
+        #vst_sep {
+    position: relative;
+    width: 100%;
+    height: 0.25em;
+    background-color: #D4D4D4;
+    margin: 2em auto;
+    float: left;
+}            
+        }
+
+
+            
+
+        h2 {
+            padding: 0;
+            font-family:quadon,'Helvetica Neue',Helvetica,Arial,sans-serif;   
+            font-size: 1.4em;
+            line-height: 1.6em;
+            color: #968437;
+            /*border-left: 4px solid blue;
+            border-right: 4px solid blue;*/
+
+
+            /*&::before {
+                content: "";
+
+                border-left: 6px  solid #968437;
+                margin-right: 1em;    
+            }*/
+
+
+
+             }   
+
+
+
+           p.vst_sub {
+
+            margin: 0.75em 0;
+            color: $ci-color;
+            font-size: 1.5em;
+                }
+
+        p.vst_date {    
+            margin: 1em 0 1.5em 0;
+            font-size: 1.2em;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            
+            letter-spacing: 1px;
+                    }
+
+        p.vst_description {    
+            font-family:quadon,'Helvetica Neue',Helvetica,Arial,sans-serif; 
+            color: #b1aea6;
+            line-height: 1.4em;
+            margin-bottom: 2em;
+                }
+
+      
+
+
+
+
+/**** hexagon ****/
+
+
+
+.hexagon {
+  position: relative;
+  width: 45px; 
+  height: 25.98px;
+  background-color: #6a6a6a;
+  margin: 2em auto;
+  text-align: justify;
+
+  &.pluscolor {
+    color: #ffffff;
+    background-color: #968437;
+
+    &:before {
+     border-bottom: 12.99px solid #968437;  
+    }
+
+    &:after {
+     border-top: 12.99px solid #968437;   
+ 
+    }
+  }
+
+h4 {
+
+    text-align: center;
+    font-size: 150%;
+    vertical-align: middle;
+}
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 22.5px solid transparent;
+  border-right: 22.5px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 12.99px solid #6a6a6a;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 12.99px solid #6a6a6a;
+}
+
+
+
+
+/*************** hexagon *****************/
+
+
+section.sect-work{
+
+
+    
+
+                margin: 0;
+                z-index: 6;
+                background-color: #ffffff;
+ 
+ /*h1.vst_preview {
+              
+                color: #4d472d;
+                padding:0;
+                font-family:quadon,'Helvetica Neue',Helvetica,Arial,sans-serif; 
+                font-size: 1.2em;
+                line-height: 2.5em;  
+                margin-bottom: 2em;  
+                text-transform: uppercase;
+                white-space:nowrap;
+                margin-left: -100%;
+                background: #ffffff;
+                top: 50%;
+                }*/
+
+                &.max-article {
+                
+                position: relative;
+                max-width: 80em;    
+                margin: 0 auto;
+                }
+
+h1.archive {
+
+                background-color: #505050;
+
+}  
+
+
+
+
+.collapse{
+  
+  display:block;
+  color: #a5a5a5;
+  background-color: #f2f2f2;
+  border-top: 2px solid #ffffff; 
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: 400;
+  text-rendering: optimizelegibility;
+  line-height: 2.5em;
+  transition: all 0.1s ease-in;
+
+  &:hover {
+
+  background-color: #e3e3e3;
+  }
+
+}
+
+
+.collapse + input[type="checkbox"]{
+  display:none;
+
+
+}
+
+.collapse + input:checked ~ .menu {
+    opacity: 1;
+    max-height: 1000em;
+    /*transform: scale(1);*/
+    overflow: visible;
+  }
+
+  .collapse_search_update + input[type="checkbox"]{
+  display:none;
+
+
+}
+
+.collapse_search_update + input:checked ~ .menu_search {
+    opacity: 1;
+    max-height: 1000em;
+    transform: scale(1);
+    overflow: visible;
+  }
+
+.collapse_search_update + input:checked {
+
+    content: "hallo";
+}
+
+.menu {
+
+
+opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  font-size: 1em;
+  /*transform: scale(0.8);*/
+  transition: 0.5s;
+
+}
+
+.menu_search {
+
+
+opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  font-size: 1em;
+  transform: scale(0.8);
+  transition: 0.5s;
+
+
+}
+
+
+/* ausstellungen archiv */
+
+.container {
+    max-width: 74em;
+    margin: 0px 40px 0px 160px;
+
+}
+
+
+.container-content {
+    position: relative;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+.accordion {
+
+    transition: height 0.4s ease 0s;
+    /*border-bottom: 2px solid #333;*/    
+
+            dt{
+    position: relative;
+    border-top: 1px solid #CCC;
+    cursor: pointer;
+            }
+
+            li {
+
+    margin: 4px 0px; 
+    
+            a .image {
+    position: relative;
+    display: block;
+            }
+
+            }
+            }
+
+.accordion dd {
+    height: 0px;
+    margin: 0px;
+    overflow: hidden;
+    transition: height 0.4s ease 0s;
+            }
+
+
+/* haken */
+
+.accordion dt:after{
+    -webkit-transition:all .4s;
+    transition:all .4s;
+    -webkit-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+    display:block;
+    position:absolute;
+    top:50%;
+    right:20px;
+    width:10px;
+    height:10px;
+    margin:-5px;
+    border-left:1px solid #333;
+    border-bottom:1px solid #333
+}
+
+.accordion dt.current:after{
+    -webkit-transform:rotate(-225deg);
+    -ms-transform:rotate(-225deg);
+    transform:rotate(-225deg)
+}
+
+/* */            
+
+/*.accordion dt +dd  */
+.accordion dd.current{
+    height: auto;
+            }
+
+.accordion dd.past{
+    height: auto;
+            }
+
+.sect-intro dd.past{
+    height: auto;
+            }
+}
+
+
+
+
+.responsive-wrap{
+    position:relative;
+    background-color:#ccc;
+    background-color:rgba(0,0,0,.1);
+    -webkit-transition:background-color .4s;
+    transition:background-color .4s
+}
+
+.responsive-wrap img{
+    -webkit-transition:opacity .4s;
+    transition:opacity .4s;
+    display:block;
+    width:100%;
+    height: auto;
+    /*opacity:0*/
+}
+
+
+.responsive-wrap.loaded{
+    background-color:transparent
+}
+
+/*.responsive-wrap.loaded img{
+    opacity:1
+}*/
+
+ul.teaser-list {
+    /*margin: 0px -10px;*/
+    overflow: hidden;
+    list-style: none outside none;
+    padding: 0px;
+    margin: 40px 0px;
+    list-style: none;
+    color: #6A6A6A;
+
+    li {
+    line-height: 1em;
+    text-align: center;
+    padding: 0 1em;
+    a {
+    display: block;  
+    }
+
+    span.title {
+    margin-top: 10px;
+    display: block;
+    font-family:quadon,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    }
+    }
+               }
+
+/*  ausstellungen archiv */
+
+.pr_wr {
+
+position: relative;
+width: 90%;
+left: 5%;
+right: 5%;
+
+article {
+
+        height: auto;
+
+figure {
+        position: relative;
+        margin: 0;
+
+        img {
+
+        display: block;   
+        float: left;
+        width: 50%;
+        height: auto;
+    }
+
+    figcaption p {
+        float: right;
+        width: 45%;
+        padding: 0;
+        font-size: 1em;
+    }
+
+        }
+
+    }
+
+    .wr_vst_btn {
+        width: 100%;
+        margin: 2em 0;
+        float:left;
+    }
+
+    h2 {
+
+    color: #6a6a6a;  
+    }
+
+    h4 
+    {
+    text-transform: uppercase;
+    color: $ci-color;
+    }
+
+}
+
+
+#vst_sep {
+
+        position: relative;
+        width: 80%;
+        height: 0.25em;
+        background-color: #d4d4d4;
+        margin: 2em auto;
+}
+
+.col-xs-6{
+        /*display:inline-block;*/
+        float:left;
+        width:50%;
+        margin:20px 0;
+    }
+
+
+/*a.vst_pr {
+           background-size: contain; 
+           background-color: transparent;  
+           background-position: top;
+           height: 50%; 
+           top: 0; 
+           display: block;
+         }*/
+
+
+
+

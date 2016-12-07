@@ -1,0 +1,143 @@
+
+		input {
+
+		box-sizing: border-box;	
+		}
+
+		form.container_nl {
+
+		margin: 0;
+		padding: 0;
+		}
+
+
+
+
+		.fieldset_newsletter {
+
+		list-style-type: none;
+		
+		border: none;
+		text-align: center;
+
+		}
+	
+
+		#wr_newsletter {
+		position: relative;	
+		margin: 3em auto;
+		/*max-width: 30em;*/
+		width: 100%;
+
+
+
+		  #newsletter  {
+
+		 	background-color: #fff;
+		 	width: 100%;
+		 }
+
+		 #btn_submit {
+		 	
+		 	background-color: #968437;
+		 	color: #fff;
+		 	font: 1em mindblue,Helvetica Neue,Helvetica,Arial,sans-serif;
+		 	border: none;
+		 	text-align: center;
+		 	width: 100%;
+		 	margin: 0.2em 0 0 0;
+		 	padding: 0;
+		 	text-transform: uppercase;
+		 	line-height: 2em;
+
+		 	&:hover { 
+
+		 	background-color: #635104;	
+		 	-webkit-transition:all 1s ease-in-out;
+            -moz-transition:all 1s ease-in-out;
+            transition:all 1s ease-in-out;
+		 	}
+		 } 
+
+		input[type="input"], input[type="submit"] {
+
+			cursor: pointer;
+			display: inline-block;
+			border: 1px solid #c5c5c5;
+
+		}
+
+
+
+		input[type="input"] {
+
+
+				&:invalid {
+				-moz-box-shadow: none;	
+				box-shadow: none;
+						
+						   }
+
+				&:required {
+
+				-moz-box-shadow: none;	
+				box-shadow: none;	
+								
+				}		   
+
+
+				font-size: 1em;
+				padding:10px 0 10px 0;
+				outline: none;
+				text-align: center;
+
+
+				&:focus ~ label, &:valid ~ label     {
+				 top:-40px;
+				 font-size: 1.4em;
+				 color: #968437;
+
+				}  	
+
+
+		}
+
+		input[type="submit"] {
+
+				line-height: 2em;
+
+		}	
+
+		 .highlight {
+				  position:absolute;
+				  height:60%; 
+				  width:100px; 
+				  top:25%; 
+				  left:0;
+				  pointer-events:none;
+				  opacity:0.5;
+
+
+				} 
+
+
+
+
+				label          {
+				  color:#999; 
+				  /*font-size: 1em;*/
+				  font-weight:normal;
+				  position:absolute;
+				  pointer-events:none;
+				  left:5px;
+				  top:10px;
+				  -webkit-transition: 0.2s ease all; 
+				  -moz-transition: 0.2s ease all; 
+				  -ms-transition: 0.2s ease all; 
+				  -o-transition: 0.2s ease all; 
+				   transition: 0.2s ease all; 	
+				}
+
+
+}
+

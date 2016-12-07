@@ -1,0 +1,453 @@
+// Impressum contact
+
+
+
+@import "reset";
+
+
+   h2.sect-mainline {
+          margin:0;  
+          padding:2em 0;
+          font-weight: 600;
+          text-rendering: optimizelegibility;
+          line-height: 1.3; 
+          text-transform: uppercase;
+          font-family: $main-line;   
+          color: $ci-color
+  
+   }
+
+
+
+section.sect-contact-maps {
+
+  background-color: #ffffff;
+  
+}
+
+.all_container{
+  width: 100%;
+  margin: 0 auto;
+  padding:0;
+  /*background-color: pink;*/
+}
+
+#map_container{
+    position: relative;
+  }
+
+#map{
+    min-height: 23em;
+    overflow: hidden;
+    padding-bottom: 22.25%;
+    padding-top: 30px;
+    position: relative;
+}
+
+
+
+    /*#basic_map{
+    position: relative;
+    background-color: #E5E3DF;
+    overflow: hidden;
+    display: block;
+    width: 95%;
+    height: 350px;
+    margin: 0px auto;
+    box-shadow: 0px 5px 20px #CCC;
+      }*/
+
+    section.contact {
+    
+    display: block;
+    overflow: hidden;
+    position: relative;
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto 1em;
+    max-height: 600em;
+    max-width: 600em;
+    min-height: 30em;
+    background-image: url('../img/sprengel_eingang.jpg');
+    background-attachment: fixed;
+    margin:0;
+  
+   &::before {
+
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 50%;
+}
+
+
+.row.intro {
+
+    z-index: 6; 
+    position: absolute;
+    left:50%;
+    top: 25%;
+
+            }
+  
+    .ausprobieren {
+
+    position: relative;
+    left: -50%;
+
+/*$main-line; $sanssub-line*/
+
+     h2  {
+      color: #c9b76a;
+      font-family: $main-line;
+      font-weight: 100;
+      letter-spacing: 0.065em;
+
+      span {
+
+    color: #FFF;
+    letter-spacing: 0.065em;
+    text-transform: uppercase;
+    font-weight: 100;
+    line-height: 1;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.3), -3px 3px 1px rgba(0, 0, 0, 0.5), -4px 4px 2px rgba(0, 0, 0, 0.2);
+    font-family: $page-line;
+
+
+     } 
+
+     }
+
+    }
+  
+
+    .fa-envelope {
+
+  color: #ffffff; 
+  z-index: 9;  
+    }
+
+
+
+p {
+    color: #ffffff; 
+    margin-top: 1em;
+
+}
+
+
+
+
+.overlay_sub  {               
+    background-color: #000000;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);             
+                }  
+
+
+    }
+
+
+    /* form */
+
+
+
+section.sect-contact-form {
+    position: relative;
+    z-index: 0;
+    padding-bottom: 2em;
+    margin:0;
+    background-color: #f8f8f8;
+
+    p.note_small {
+
+    color: $ci-color;     
+    font-size: 80%;
+    text-align: left;
+    margin-left: 5%;
+    margin-bottom: 3em;
+    padding-top: 2em;
+    }
+
+.text_group {
+
+ h4 {
+
+
+    color: #999;
+font-size: 18px;
+font-weight: normal;
+position: relative;
+pointer-events: none;
+text-align: center;
+transition: all 0.3s ease 0s;
+  }
+
+
+ textarea {
+  /*border: 2px solid $grey-subline;      */
+  min-height: 12em; 
+  padding: 0;
+  width: 90%;
+  /*background-color: #ffffff;*/
+  font-size: 120%;
+  max-width: 54em;
+  border: none;
+&:focus {
+
+ 
+}
+
+  }
+
+}
+
+    form {
+    position:relative;
+    max-width: 54em;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    form div.group        { 
+  
+    position:relative; 
+    margin-bottom:45px; 
+    max-width: 54em;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    input         {
+  color: #a5a5a5;
+  font-size:18px;
+  padding:10px 0;
+  display:block;
+  width: 90%;
+  max-width: 60em;
+  border:none;
+  /*border-bottom:1px solid #757575;*/
+  margin-left: auto;
+  margin-right: auto;
+  transition:1s ease all; 
+
+&:required {
+    box-shadow:none;
+}
+
+  &:focus     { 
+    outline:none; 
+    border-bottom: none;
+          }
+
+          &:focus ~ label, &:valid ~ label     {
+      top:-20px;
+      font-size: 1em;
+      color: $ci-color;
+          }
+          }
+
+              input[type=submit] {
+
+      background-color: lighten($ci-color, 30%);
+      color: lighten($grey-subline, 40%);
+      text-transform: uppercase;
+      text-rendering: optimizelegibility;
+
+      &:hover {
+ 
+      background-color: $ci-color;
+    }
+
+
+    }
+
+
+    label        {
+    color:#999; 
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    
+    left: 5%;
+    top:10px;
+    transition:0.3s ease all; 
+    }
+
+    .bar  { 
+      position:relative; 
+      display:block; 
+      width:90%;
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+    .bar:before, .bar:after   {
+      content:'';
+      height:4px; 
+      width:0;
+      bottom:1px; 
+      position:absolute;
+      background-color: lighten($grey-subline, 15%);
+      transition:0.2s ease all; 
+    }
+    
+    .bar:before {
+      left:50%;
+    }
+    
+    .bar:after {
+      right: 50%; 
+    }
+
+
+    input:focus ~ .bar:before, input:focus ~ .bar:after {
+      width:50%;
+    }
+
+
+    }
+
+
+    .highlight {
+      position:absolute;
+      height:60%; 
+      width:100px; 
+      top:25%; 
+      left:0;
+      pointer-events:none;
+      opacity:0.5;
+    }
+
+    /* active state */
+    input:focus ~ .highlight {
+      animation:inputHighlighter 0.3s ease;
+    }
+
+    /* ANIMATIONS ================ */
+    @keyframes inputHighlighter {
+      from  { background:#5264AE; }
+      to    { width:0; background:transparent; }
+    }
+
+      }
+
+
+     .transport_icon {
+
+      margin-top: 2em;
+      margin-left:auto;
+      margin-right:auto;
+     }
+
+   section.sect-work .accordion dt {
+
+      border-top: none;
+      cursor: auto;
+
+   }
+
+   section.sect-work {
+
+      .dcn_announcement {
+
+        h2 {
+
+            margin:0;
+            padding: 1.5em 0 0 0;    
+
+        }
+
+        p {
+
+          padding-bottom: 1.5em;
+        }
+
+
+      }
+
+        label.dst_bottom {
+          margin-bottom: 1.5em;
+
+        }
+
+        .smallmenu {
+
+          position:relative;
+          width:100%;
+          margin:0;
+          padding: 0;
+          background-color: #f8f8f8;
+
+        h2 {
+          margin:0;  
+          padding:2em 0;
+          font-weight: 600;
+          text-rendering: optimizelegibility;
+          line-height: 1.3; 
+          text-transform: uppercase;
+          font-family: $main-line;   
+          color: $ci-color;   
+        }
+
+
+          ul {
+
+            list-style: none outside none;
+            margin: 0 auto;
+            width: 70%;
+
+          li:nth-of-type(1):before {
+            content:"\f08e";
+            font-family: fontawesome;
+            margin-right: 0.5em;
+            font-size: 1.2em;
+          }
+
+          li:nth-of-type(2):before {
+            content:"\f09e";
+            font-family: fontawesome;
+            margin-right: 0.5em;
+            font-size: 1.2em;
+          }
+
+          li:nth-of-type(3):before {
+            content:"\f1f9";
+            font-family: fontawesome;
+            margin-right: 0.5em;
+            font-size: 1.2em;
+          }
+
+          li:nth-of-type(4):before {
+            content:"\f0e8";
+            font-family: fontawesome;
+            margin-right: 0.5em;
+            font-size: 1.2em;
+          }
+            li {
+              
+              display:inline-block;
+              margin: 0  5em 0 0;
+              padding-bottom: 2em;
+              text-rendering: optimizelegibility;
+
+            span { 
+
+              &:hover {
+
+                color: lighten($grey-subline, 20%);
+              }
+
+                 } 
+            }
+          }
+        }
+
+
+   }
+
+
+

@@ -1,0 +1,235 @@
+// footer
+
+@import "reset";
+
+footer.footer-main {
+	z-index: 0;
+    position: relative;
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding:3em 0 4em;
+	overflow-y:hidden;
+	font-size:.9em;
+	background-color: #ffffff;
+	color: #a5a5a5;
+	width:100%;
+	background-position:center 19em;
+	background-size:87% auto;
+	background-repeat:no-repeat;
+	border-top: 1px solid #b1aea6;
+}
+
+/*footer.footer-main.sub {
+	background-color: #ffffff;
+	color: #a5a5a5;
+}*/
+
+
+footer.footer-main a{
+	text-decoration:none;
+}
+
+footer.footer-main aside > *{
+	font-weight:normal;
+	font-style:normal;
+	line-height:2em;
+}
+
+footer.footer-main.gold,footer.footer-main  a{
+	color:#c5a47e;
+}
+
+
+
+
+/*footer.footer-main nav a{
+	color:#e6e7e8;
+	text-decoration:none;
+	letter-spacing: 0.1em;
+	display:block;
+	font-family: "tungsten", "helvetica neue", helvetica, arial, sans-serif;
+	font-size: 2em;
+	font-weight: 200;
+}*/
+
+footer.footer-main nav ul.social{
+	list-style:none;
+	
+	margin:0 auto;
+	width:100%;
+	text-align:center;
+	padding: 0;
+}
+
+footer.footer-main .row nav h3 {
+
+	font-family: "quadon","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+
+/*footer.footer-main .row nav ul.social li{
+
+		
+  	border-bottom: 1px solid #e4e4e4;
+
+}*/
+
+
+footer.footer-main .row nav ul.social li{
+
+	display:inline-block;
+	width: 40%;
+	max-width: 20em; 
+  	height: 6em;
+  	transition: background-color ease-in-out 0.5s;
+  	position: relative;
+  	overflow: hidden;	
+
+  		 a {
+  		color: #a5a5a5;
+  		display:block;
+  		height: 100%;
+  			}
+}
+
+
+/* sicherheitskopie *
+
+	display:inline-block;
+	width: 40%;
+  	height: 6em;
+  	transition: background-color ease-in-out 0.5s;
+  	position: relative;
+  		
+
+  		 a {
+  		color: #ffffff;	
+  		display:block;
+  		height: 100%;
+  			}
+} */
+
+
+
+
+footer.footer-main .row nav .div_line {
+	top:2em;
+	bottom: 2em;
+	border: 1px solid lighten($grey-subline, 20%);
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	width: 50%;
+	overflow: hidden;
+}
+
+
+footer.footer-main .row nav ul.social li::before {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: -40px;
+	content: '';
+	margin-left: auto;
+	margin-right: auto;
+	-webkit-transform: scale(0.6);
+	transform: scale(0.6);
+	/*-webkit-transform: translateY(100%);
+	transform: translateY(100%);*/
+	-webkit-transition: opacity 0.3s, transform 0.4s;
+	transition: opacity 0.3s, transform 0.4s;
+}
+
+footer.footer-main .row nav ul.social li:hover::before{
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	/*transform: translateY(0px);
+	transition: transform 0.4s;*/
+	/*background-color: #4f4f4f;*/
+	border: 2px solid lighten($grey-subline, 30%);
+	overflow:visible;
+}
+
+
+/*	border-left: 6px solid #a5a5a5;
+	border-right: 6px solid #a5a5a5;
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;*/
+
+	/* bright */
+
+	/*footer.footer-main .row nav ul.social li.bright{
+
+		
+  	border-bottom: 1px solid #e4e4e4;
+
+}*/
+
+/*footer.footer-main .row nav ul.social li.bright:hover::before{
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);*
+	transform: translateY(0px);
+	transition: transform 0.4s;
+	background-color: #e4e4e4;
+}*/
+
+/*  */
+
+footer.footer-main .row nav ul li a p.social_name  {    
+                    z-index: 10;
+                    text-align: center;
+                    opacity: 0;
+                    transition: opacity ease-in-out 0.5s;	
+                    vertical-align:middle;
+                    text-transform: uppercase;
+                    position: relative;
+               } 
+
+
+footer.footer-main .row nav ul li:hover p.social_name {
+					opacity: 1;
+
+}                                           
+
+
+
+footer.footer-main aside{
+	font-family:quadon,'Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-size:80%;
+	text-transform:uppercase;
+	letter-spacing:0.122em;
+	text-align:center;
+	line-height:1.6em;
+	margin:1em 0;
+}
+
+footer.footer-main .row nav .copyright_wr {
+
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+	background-color: #ffffff;
+	color: #aaaaaa;
+}
+
+footer.footer-main aside.footer_bottom {
+
+border-top: 1px solid #b1aea6;
+width: 100%;
+text-align: center;
+background-color: #ffffff;
+height: 50px;
+position: absolute;
+}

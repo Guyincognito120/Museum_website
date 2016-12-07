@@ -1,0 +1,231 @@
+
+/* --------------logo  --------------  */
+
+
+@import "reset";
+
+
+
+
+.logo svg path {
+-webkit-transition: fill 0.8s ease;
+-moz-transition: fill 0.8s ease;
+-o-transition: fill 0.8s ease;
+transition: fill 0.8s ease;
+}
+
+
+
+.logo svg:hover path {
+
+fill: rgba(48,30,0,1);
+
+}
+
+ul.uilogo {
+    
+    position:relative;
+    top:1em;
+    left:1em;           			
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    max-width:14em;	
+
+    li {
+   	
+   	display:inline-block;
+    clear:both;
+    }
+	
+}
+
+
+/*.uilogo {
+    text-align: center;
+    vertical-align:middle;
+    ul {
+
+    list-style-type: none;
+    margin:0 0 0 5%;
+    padding:0;
+    	
+    }
+
+    li {
+
+    float:left;	
+    clear:both;
+    }
+	
+}*/
+
+
+
+#svg_logo {
+
+				position: relative;
+				display: block;
+				/*float: left;*/
+				/*margin-left: .5em;*/
+				
+				/*min-width: 3em;
+				clear: both;*/
+				
+
+
+}
+
+
+.font_logo {
+				font: 1.2em "tungsten",helvetica, arial, sans-serif;
+				/*position: absolute;*/
+				text-align: center;
+				color: #968437;
+				line-height: 1.2em;
+				white-space:nowrap;
+				letter-spacing: 0.1em;
+				margin:0;
+				padding:0;
+				position:relative;
+				top:-101%;
+
+			
+
+			}
+
+
+
+.font_light span.farbe {
+    color: #c5c5c5;
+
+}
+
+
+
+a.scroll:hover,.uilogo:hover{
+	-webkit-transition:all 1s ease;
+	-moz-transition:all 1s ease;
+	transition:all 1s ease
+}
+
+a.scroll:hover a.scroll:after,.uilogo:hover a.scroll:after{
+	background-color:#D36940;
+	box-shadow:0px 0px 33px 0 #D36940
+}
+
+a.scroll:hover span.farbe,.uilogo:hover span.farbe{
+	color:#c5a47e;
+}
+
+header .font_logo span.farbe:nth-of-type(1){
+	-webkit-transition-delay:0.1s;
+	-moz-transition-delay:0.1s;
+	transition-delay:0.1s
+}
+
+header .font_logo span.farbe:nth-of-type(2){
+	-webkit-transition-delay:0.125s;
+	-moz-transition-delay:0.125s;
+	transition-delay:0.125s
+}
+
+header .font_logo span.farbe:nth-of-type(3){
+	-webkit-transition-delay:0.15s;
+	-moz-transition-delay:0.15s;
+	transition-delay:0.15s
+}
+
+header .font_logo span.farbe:nth-of-type(4){
+	-webkit-transition-delay:0.175s;
+	-moz-transition-delay:0.175s;
+	transition-delay:0.175s
+}
+
+header .font_logo span.farbe:nth-of-type(5){
+	-webkit-transition-delay:0.2s;
+	-moz-transition-delay:0.2s;
+	transition-delay:0.2s
+}
+
+header .font_logo span.farbe:nth-of-type(6){
+	-webkit-transition-delay:0.225s;
+	-moz-transition-delay:0.225s;
+	transition-delay:0.225s;
+}
+
+header .font_logo span.farbe:nth-of-type(7){
+	-webkit-transition-delay:0.25s;
+	-moz-transition-delay:0.25s;
+	transition-delay:0.25s
+}
+
+header .font_logo span.farbe:nth-of-type(8){
+	-webkit-transition-delay:0.275s;
+	-moz-transition-delay:0.275s;
+	transition-delay:0.275s
+}
+
+header .font_logo span.farbe:nth-of-type(9){
+	-webkit-transition-delay:0.3s;
+	-moz-transition-delay:0.3s;
+	transition-delay:0.3s
+}
+
+header .font_logo span.farbe:nth-of-type(10){
+	-webkit-transition-delay:0.325s;
+	-moz-transition-delay:0.325s;
+	transition-delay:0.325s
+}
+
+header .font_logo span.farbe:nth-of-type(11){
+	-webkit-transition-delay:0.35s;
+	-moz-transition-delay:0.35s;
+	transition-delay:0.35s
+}
+
+header .font_logo span.farbe:nth-of-type(12){
+	-webkit-transition-delay:0.375s;
+	-moz-transition-delay:0.375s;
+	transition-delay:0.375s
+}
+
+header .font_logo span.farbe:nth-of-type(13){
+	-webkit-transition-delay:0.4s;
+	-moz-transition-delay:0.4s;
+	transition-delay:0.4s
+}
+
+header .font_logo span.farbe:nth-of-type(14){
+	-webkit-transition-delay:0.425s;
+	-moz-transition-delay:0.425s;
+	transition-delay:0.425s
+}
+
+header .font_logo span.farbe:nth-of-type(15){
+	-webkit-transition-delay:0.45s;
+	-moz-transition-delay:0.45s;
+	transition-delay:0.45s
+}
+
+header .font_logo span.farbe:nth-of-type(16){
+	-webkit-transition-delay:0.475s;
+	-moz-transition-delay:0.475s;
+	transition-delay:0.475s
+}
+
+header .font_logo span.farbe:nth-of-type(17){
+	-webkit-transition-delay:0.5s;
+	-moz-transition-delay:0.5s;
+	transition-delay:0.5s
+}
+
+
+
+
+/* ---------------------  nav desktop ------------------------- */
+
+
+
+
+
