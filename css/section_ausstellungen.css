@@ -1,0 +1,838 @@
+/*@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);}*/
+@font-face {
+  font-family: 'Rosario';
+  src: url("../fonts/Rosario-Bold.eot"), url("../fonts/Rosario-Bold.otf") format("opentype"), url("../fonts/Rosario-Bold") format("woff"), url("../fonts/Rosario-Bold.ttf") format("truetype"), url("../fonts/Rosario-Regular.eot"), url("../fonts/Rosario-Regular.otf") format("opentype"), url("../fonts/Rosario-Regular") format("woff"), url("../fonts/Rosario-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "tungsten";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/TungstenComp-Light.otf");
+}
+
+@font-face {
+  font-family: "quadon";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/quadon.otf");
+}
+
+@font-face {
+  font-family: 'Icomoon';
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'socicon';
+  src: url("../fonts/socicon-webfont.eot");
+  src: url("../fonts/socicon-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/socicon-webfont.woff") format("woff"), url("../fonts/socicon-webfont.ttf") format("truetype"), url("../fonts/socicon-webfont.svg#sociconregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  text-transform: initial;
+}
+
+@font-face {
+  font-family: 'fontawesome';
+  src: url("../fonts/FontAwesome.otf");
+  src: url("../fonts/fontawesome-webfont.eot") format("embedded-opentype"), url("../fonts/socicon-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  text-transform: initial;
+}
+
+/* line 84, ../sass/reset.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 92, ../sass/reset.scss */
+.socicon {
+  position: relative;
+  display: inline-block;
+  font-family: 'socicon';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  font-size: 2em;
+  top: 0.5em;
+}
+
+/* line 103, ../sass/reset.scss */
+.socicon:empty {
+  width: 1em;
+}
+
+/* line 107, ../sass/reset.scss */
+.socicon-twitter:before {
+  content: "a";
+}
+
+/* line 108, ../sass/reset.scss */
+.socicon-facebook:before {
+  content: "b";
+}
+
+/* line 109, ../sass/reset.scss */
+.socicon-youtube:before {
+  content: "r";
+}
+
+/* line 110, ../sass/reset.scss */
+.socicon-instagram:before {
+  content: "x";
+}
+
+/* line 115, ../sass/reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+/*.symbol, a.symbol:before {
+    font-family: "MonoSocialIconsFont";
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}*/
+/* line 133, ../sass/reset.scss */
+a {
+  color: #c5a47e;
+  text-decoration: none;
+  line-height: inherit;
+  -webkit-transition: color,0.6s,ease-in;
+  -moz-transition: color,0.6s,ease-in;
+  transition: color, 0.6s, ease-in;
+}
+
+/*a.symbol:before {
+    content: attr(title);
+    margin-right: 0.3em;
+    font-size: 130%;
+}*/
+/* line 150, ../sass/reset.scss */
+h1, h2 {
+  font-family: 'MindBlue',Helvetica Neue,Helvetica,Arial, sans-serif;
+  color: #353535;
+}
+
+/* line 156, ../sass/reset.scss */
+h1, .h1 {
+  margin: 0.6em 0px;
+}
+
+/* line 162, ../sass/reset.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  text-rendering: optimizelegibility;
+  line-height: 1.3;
+  padding: 0;
+  margin: 0;
+}
+
+/* reset */
+/* line 174, ../sass/reset.scss */
+body, html {
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 181, ../sass/reset.scss */
+body {
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  color: #b1aea6;
+  background: #fffcf5;
+  min-height: 800px;
+  -webkit-animation: bugfix infinite 1s;
+}
+
+@-webkit-keyframes bugfix {
+  /* line 190, ../sass/reset.scss */
+  from {
+    padding: 0;
+  }
+
+  /* line 191, ../sass/reset.scss */
+  to {
+    padding: 0;
+  }
+}
+
+/* border-box statt content-box */
+/* line 196, ../sass/reset.scss */
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 204, ../sass/reset.scss */
+.clearfix:before,
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* line 214, ../sass/reset.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 221, ../sass/reset.scss */
+a {
+  color: #ccc;
+  text-decoration: none;
+  display: block;
+}
+
+/* main in uebung container ist nur für die dimensionen zuständig   */
+/* line 230, ../sass/reset.scss */
+.container {
+  padding-top: 1em;
+  background: pink;
+}
+
+/* line 239, ../sass/reset.scss */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+  /* ie8 */
+  box-sizing: border-box;
+}
+
+/* line 250, ../sass/reset.scss */
+iframe, object, embed {
+  max-width: 100%;
+}
+
+/* line 8, ../sass/section_ausstellungen.scss */
+section.welcome_vst {
+  /*margin: 0;
+  z-index: 6;
+  background-size: cover;
+  
+  background-position: bottom;
+  background-attachment: fixed;
+  height: 20em;
+  min-height: 20em;*/
+  display: block;
+  overflow: hidden;
+  position: relative;
+  background-color: #000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto 1em;
+  max-height: 600em;
+  max-width: 600em;
+  min-height: 30em;
+  background-image: url("../img/sprengel_vst.jpg");
+  background-attachment: fixed;
+}
+/* line 33, ../sass/section_ausstellungen.scss */
+section.welcome_vst h2 {
+  color: #c9b76a;
+  font-family: "quadon", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.065em;
+}
+/* line 41, ../sass/section_ausstellungen.scss */
+section.welcome_vst h2 span {
+  color: #FFF;
+  letter-spacing: 0.065em;
+  text-transform: uppercase;
+  font-weight: 100;
+  line-height: 1;
+  text-shadow: -2px 2px 0px transparent, -3px 3px 1px transparent, -4px 4px 2px transparent;
+  font-family: "tungsten","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* line 54, ../sass/section_ausstellungen.scss */
+.welcome_vst .row.intro {
+  position: relative;
+  top: 40%;
+  transform: translateY(40%);
+  z-index: 6;
+  /*position: absolute;
+   
+  text-align: center;
+  animation: 3s ease-in-out 1s normal both 1 fade-in;
+  white-space:nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  top: 7em;*/
+}
+/* line 68, ../sass/section_ausstellungen.scss */
+.welcome_vst .row.intro::before {
+  content: url(../img/veranstaltungen.svg);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5em;
+}
+/* line 78, ../sass/section_ausstellungen.scss */
+.welcome_vst .row.intro hr.sep {
+  width: 6%;
+}
+
+/****************************************************** allgemein ****************************************************/
+/* line 89, ../sass/section_ausstellungen.scss */
+h1.intro-title .vst {
+  font-size: 2em;
+}
+
+/* line 96, ../sass/section_ausstellungen.scss */
+.lay_vst, [class*="lay_vst"] {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: block;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  background-color: #000000;
+  opacity: 0.8;
+  transition: background-color 1s ease-in-out 0s;
+}
+
+/* line 109, ../sass/section_ausstellungen.scss */
+.lay_vst_art {
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 40%;
+  bottom: 0;
+  top: 60%;
+}
+
+/* line 119, ../sass/section_ausstellungen.scss */
+.announce_vst_img {
+  position: relative;
+  top: 70%;
+  z-index: 9;
+}
+/* line 126, ../sass/section_ausstellungen.scss */
+.announce_vst_img hr.sep_vst_art {
+  border: 1px solid #ffffff;
+  display: block;
+  width: 25%;
+  margin: .1em  auto;
+}
+/* line 134, ../sass/section_ausstellungen.scss */
+.announce_vst_img h2 {
+  font-size: 3em;
+  font-family: "tungsten","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.065em;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 143, ../sass/section_ausstellungen.scss */
+.announce_vst_img h2 br {
+  display: block;
+  margin: 2px 0;
+}
+
+/****************************************************** überschrift ****************************************************/
+/* line 154, ../sass/section_ausstellungen.scss */
+.vst_announcement {
+  max-width: 40em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 164, ../sass/section_ausstellungen.scss */
+.vst_border {
+  border: none;
+}
+/* line 167, ../sass/section_ausstellungen.scss */
+.vst_border h2 {
+  font-weight: 600;
+  font-size: 1.1em;
+}
+/* line 173, ../sass/section_ausstellungen.scss */
+.vst_border p {
+  padding-bottom: 1em;
+}
+
+/* line 180, ../sass/section_ausstellungen.scss */
+.vst_announcement_pr {
+  position: relative;
+  width: 55%;
+  max-width: 30em;
+  float: left;
+  left: 2em;
+  right: 3%;
+}
+
+/* -------------------------- */
+/* line 192, ../sass/section_ausstellungen.scss */
+h2.vst_mainlink {
+  font-family: quadon,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+  color: #968437;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+/* ----------  allgemeine vst style ------ */
+/* line 208, ../sass/section_ausstellungen.scss */
+.btn_access_vst {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-family: "verlag","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  background: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  line-height: 1em;
+  letter-spacing: 0.1em;
+  color: #b1aea6;
+  border: 3px solid #b1aea6;
+  padding: 0.8em .5em 0.6em;
+  margin-bottom: 3em;
+  outline: 0px none;
+  z-index: 3;
+  white-space: nowrap;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 232, ../sass/section_ausstellungen.scss */
+.btn_access_vst:hover {
+  color: #322F27;
+  border: 3px solid #322F27;
+}
+
+/* line 242, ../sass/section_ausstellungen.scss */
+article {
+  /* padding-top: 1em; */
+}
+/* line 247, ../sass/section_ausstellungen.scss */
+article a.vst_link {
+  display: block;
+  max-height: 30em;
+  height: 30em;
+  background-attachment: fixed;
+}
+/* line 254, ../sass/section_ausstellungen.scss */
+article #vst_sep {
+  position: relative;
+  width: 100%;
+  height: 0.25em;
+  background-color: #D4D4D4;
+  margin: 2em auto;
+  float: left;
+}
+
+/* line 267, ../sass/section_ausstellungen.scss */
+h2 {
+  padding: 0;
+  font-family: quadon,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size: 1.4em;
+  line-height: 1.6em;
+  color: #968437;
+  /*border-left: 4px solid blue;
+  border-right: 4px solid blue;*/
+            /*&::before {
+                content: "";
+
+                border-left: 6px  solid #968437;
+                margin-right: 1em;    
+            }*/
+}
+
+/* line 290, ../sass/section_ausstellungen.scss */
+p.vst_sub {
+  margin: 0.75em 0;
+  color: #968437;
+  font-size: 1.5em;
+}
+
+/* line 297, ../sass/section_ausstellungen.scss */
+p.vst_date {
+  margin: 1em 0 1.5em 0;
+  font-size: 1.2em;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  letter-spacing: 1px;
+}
+
+/* line 305, ../sass/section_ausstellungen.scss */
+p.vst_description {
+  font-family: quadon,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  color: #b1aea6;
+  line-height: 1.4em;
+  margin-bottom: 2em;
+}
+
+/**** hexagon ****/
+/* line 321, ../sass/section_ausstellungen.scss */
+.hexagon {
+  position: relative;
+  width: 45px;
+  height: 25.98px;
+  background-color: #6a6a6a;
+  margin: 2em auto;
+  text-align: justify;
+}
+/* line 329, ../sass/section_ausstellungen.scss */
+.hexagon.pluscolor {
+  color: #ffffff;
+  background-color: #968437;
+}
+/* line 333, ../sass/section_ausstellungen.scss */
+.hexagon.pluscolor:before {
+  border-bottom: 12.99px solid #968437;
+}
+/* line 337, ../sass/section_ausstellungen.scss */
+.hexagon.pluscolor:after {
+  border-top: 12.99px solid #968437;
+}
+/* line 343, ../sass/section_ausstellungen.scss */
+.hexagon h4 {
+  text-align: center;
+  font-size: 150%;
+  vertical-align: middle;
+}
+
+/* line 352, ../sass/section_ausstellungen.scss */
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 22.5px solid transparent;
+  border-right: 22.5px solid transparent;
+}
+
+/* line 360, ../sass/section_ausstellungen.scss */
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 12.99px solid #6a6a6a;
+}
+
+/* line 365, ../sass/section_ausstellungen.scss */
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 12.99px solid #6a6a6a;
+}
+
+/*************** hexagon *****************/
+/* line 377, ../sass/section_ausstellungen.scss */
+section.sect-work {
+  margin: 0;
+  z-index: 6;
+  background-color: #ffffff;
+  /*h1.vst_preview {
+               
+                 color: #4d472d;
+                 padding:0;
+                 font-family:quadon,'Helvetica Neue',Helvetica,Arial,sans-serif; 
+                 font-size: 1.2em;
+                 line-height: 2.5em;  
+                 margin-bottom: 2em;  
+                 text-transform: uppercase;
+                 white-space:nowrap;
+                 margin-left: -100%;
+                 background: #ffffff;
+                 top: 50%;
+                 }*/
+  /* ausstellungen archiv */
+  /* haken */
+  /* */
+  /*.accordion dt +dd  */
+}
+/* line 401, ../sass/section_ausstellungen.scss */
+section.sect-work.max-article {
+  position: relative;
+  max-width: 80em;
+  margin: 0 auto;
+}
+/* line 408, ../sass/section_ausstellungen.scss */
+section.sect-work h1.archive {
+  background-color: #505050;
+}
+/* line 417, ../sass/section_ausstellungen.scss */
+section.sect-work .collapse {
+  display: block;
+  color: #a5a5a5;
+  background-color: #f2f2f2;
+  border-top: 2px solid #ffffff;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: 400;
+  text-rendering: optimizelegibility;
+  line-height: 2.5em;
+  transition: all 0.1s ease-in;
+}
+/* line 430, ../sass/section_ausstellungen.scss */
+section.sect-work .collapse:hover {
+  background-color: #e3e3e3;
+}
+/* line 438, ../sass/section_ausstellungen.scss */
+section.sect-work .collapse + input[type="checkbox"] {
+  display: none;
+}
+/* line 444, ../sass/section_ausstellungen.scss */
+section.sect-work .collapse + input:checked ~ .menu {
+  opacity: 1;
+  max-height: 1000em;
+  /*transform: scale(1);*/
+  overflow: visible;
+}
+/* line 451, ../sass/section_ausstellungen.scss */
+section.sect-work .collapse_search_update + input[type="checkbox"] {
+  display: none;
+}
+/* line 457, ../sass/section_ausstellungen.scss */
+section.sect-work .collapse_search_update + input:checked ~ .menu_search {
+  opacity: 1;
+  max-height: 1000em;
+  transform: scale(1);
+  overflow: visible;
+}
+/* line 464, ../sass/section_ausstellungen.scss */
+section.sect-work .collapse_search_update + input:checked {
+  content: "hallo";
+}
+/* line 469, ../sass/section_ausstellungen.scss */
+section.sect-work .menu {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  font-size: 1em;
+  /*transform: scale(0.8);*/
+  transition: 0.5s;
+}
+/* line 481, ../sass/section_ausstellungen.scss */
+section.sect-work .menu_search {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  font-size: 1em;
+  transform: scale(0.8);
+  transition: 0.5s;
+}
+/* line 497, ../sass/section_ausstellungen.scss */
+section.sect-work .container {
+  max-width: 74em;
+  margin: 0px 40px 0px 160px;
+}
+/* line 504, ../sass/section_ausstellungen.scss */
+section.sect-work .container-content {
+  position: relative;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+/* line 510, ../sass/section_ausstellungen.scss */
+section.sect-work .accordion {
+  transition: height 0.4s ease 0s;
+  /*border-bottom: 2px solid #333;*/
+}
+/* line 515, ../sass/section_ausstellungen.scss */
+section.sect-work .accordion dt {
+  position: relative;
+  border-top: 1px solid #CCC;
+  cursor: pointer;
+}
+/* line 521, ../sass/section_ausstellungen.scss */
+section.sect-work .accordion li {
+  margin: 4px 0px;
+}
+/* line 525, ../sass/section_ausstellungen.scss */
+section.sect-work .accordion li a .image {
+  position: relative;
+  display: block;
+}
+/* line 533, ../sass/section_ausstellungen.scss */
+section.sect-work .accordion dd {
+  height: 0px;
+  margin: 0px;
+  overflow: hidden;
+  transition: height 0.4s ease 0s;
+}
+/* line 543, ../sass/section_ausstellungen.scss */
+section.sect-work .accordion dt:after {
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 10px;
+  height: 10px;
+  margin: -5px;
+  border-left: 1px solid #333;
+  border-bottom: 1px solid #333333;
+}
+/* line 560, ../sass/section_ausstellungen.scss */
+section.sect-work .accordion dt.current:after {
+  -webkit-transform: rotate(-225deg);
+  -ms-transform: rotate(-225deg);
+  transform: rotate(-225deg);
+}
+/* line 569, ../sass/section_ausstellungen.scss */
+section.sect-work .accordion dd.current {
+  height: auto;
+}
+/* line 573, ../sass/section_ausstellungen.scss */
+section.sect-work .accordion dd.past {
+  height: auto;
+}
+/* line 577, ../sass/section_ausstellungen.scss */
+section.sect-work .sect-intro dd.past {
+  height: auto;
+}
+
+/* line 585, ../sass/section_ausstellungen.scss */
+.responsive-wrap {
+  position: relative;
+  background-color: #ccc;
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-transition: background-color .4s;
+  transition: background-color 0.4s;
+}
+
+/* line 593, ../sass/section_ausstellungen.scss */
+.responsive-wrap img {
+  -webkit-transition: opacity .4s;
+  transition: opacity .4s;
+  display: block;
+  width: 100%;
+  height: auto;
+  /*opacity:0*/
+}
+
+/* line 603, ../sass/section_ausstellungen.scss */
+.responsive-wrap.loaded {
+  background-color: transparent;
+}
+
+/*.responsive-wrap.loaded img{
+    opacity:1
+}*/
+/* line 611, ../sass/section_ausstellungen.scss */
+ul.teaser-list {
+  /*margin: 0px -10px;*/
+  overflow: hidden;
+  list-style: none outside none;
+  padding: 0px;
+  margin: 40px 0px;
+  list-style: none;
+  color: #6A6A6A;
+}
+/* line 620, ../sass/section_ausstellungen.scss */
+ul.teaser-list li {
+  line-height: 1em;
+  text-align: center;
+  padding: 0 1em;
+}
+/* line 624, ../sass/section_ausstellungen.scss */
+ul.teaser-list li a {
+  display: block;
+}
+/* line 628, ../sass/section_ausstellungen.scss */
+ul.teaser-list li span.title {
+  margin-top: 10px;
+  display: block;
+  font-family: quadon,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/*  ausstellungen archiv */
+/* line 640, ../sass/section_ausstellungen.scss */
+.pr_wr {
+  position: relative;
+  width: 90%;
+  left: 5%;
+  right: 5%;
+}
+/* line 647, ../sass/section_ausstellungen.scss */
+.pr_wr article {
+  height: auto;
+}
+/* line 651, ../sass/section_ausstellungen.scss */
+.pr_wr article figure {
+  position: relative;
+  margin: 0;
+}
+/* line 655, ../sass/section_ausstellungen.scss */
+.pr_wr article figure img {
+  display: block;
+  float: left;
+  width: 50%;
+  height: auto;
+}
+/* line 663, ../sass/section_ausstellungen.scss */
+.pr_wr article figure figcaption p {
+  float: right;
+  width: 45%;
+  padding: 0;
+  font-size: 1em;
+}
+/* line 674, ../sass/section_ausstellungen.scss */
+.pr_wr .wr_vst_btn {
+  width: 100%;
+  margin: 2em 0;
+  float: left;
+}
+/* line 680, ../sass/section_ausstellungen.scss */
+.pr_wr h2 {
+  color: #6a6a6a;
+}
+/* line 686, ../sass/section_ausstellungen.scss */
+.pr_wr h4 {
+  text-transform: uppercase;
+  color: #968437;
+}
+
+/* line 694, ../sass/section_ausstellungen.scss */
+#vst_sep {
+  position: relative;
+  width: 80%;
+  height: 0.25em;
+  background-color: #d4d4d4;
+  margin: 2em auto;
+}
+
+/* line 703, ../sass/section_ausstellungen.scss */
+.col-xs-6 {
+  /*display:inline-block;*/
+  float: left;
+  width: 50%;
+  margin: 20px 0;
+}
+
+/*a.vst_pr {
+           background-size: contain; 
+           background-color: transparent;  
+           background-position: top;
+           height: 50%; 
+           top: 0; 
+           display: block;
+         }*/

@@ -1,0 +1,591 @@
+/*@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);}*/
+@font-face {
+  font-family: 'Rosario';
+  src: url("../fonts/Rosario-Bold.eot"), url("../fonts/Rosario-Bold.otf") format("opentype"), url("../fonts/Rosario-Bold") format("woff"), url("../fonts/Rosario-Bold.ttf") format("truetype"), url("../fonts/Rosario-Regular.eot"), url("../fonts/Rosario-Regular.otf") format("opentype"), url("../fonts/Rosario-Regular") format("woff"), url("../fonts/Rosario-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "tungsten";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/TungstenComp-Light.otf");
+}
+
+@font-face {
+  font-family: "quadon";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/quadon.otf");
+}
+
+@font-face {
+  font-family: 'Icomoon';
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'socicon';
+  src: url("../fonts/socicon-webfont.eot");
+  src: url("../fonts/socicon-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/socicon-webfont.woff") format("woff"), url("../fonts/socicon-webfont.ttf") format("truetype"), url("../fonts/socicon-webfont.svg#sociconregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  text-transform: initial;
+}
+
+@font-face {
+  font-family: 'fontawesome';
+  src: url("../fonts/FontAwesome.otf");
+  src: url("../fonts/fontawesome-webfont.eot") format("embedded-opentype"), url("../fonts/socicon-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  text-transform: initial;
+}
+
+/* line 84, ../sass/reset.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 92, ../sass/reset.scss */
+.socicon {
+  position: relative;
+  display: inline-block;
+  font-family: 'socicon';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  font-size: 2em;
+  top: 0.5em;
+}
+
+/* line 103, ../sass/reset.scss */
+.socicon:empty {
+  width: 1em;
+}
+
+/* line 107, ../sass/reset.scss */
+.socicon-twitter:before {
+  content: "a";
+}
+
+/* line 108, ../sass/reset.scss */
+.socicon-facebook:before {
+  content: "b";
+}
+
+/* line 109, ../sass/reset.scss */
+.socicon-youtube:before {
+  content: "r";
+}
+
+/* line 110, ../sass/reset.scss */
+.socicon-instagram:before {
+  content: "x";
+}
+
+/* line 115, ../sass/reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+/*.symbol, a.symbol:before {
+    font-family: "MonoSocialIconsFont";
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}*/
+/* line 133, ../sass/reset.scss */
+a {
+  color: #c5a47e;
+  text-decoration: none;
+  line-height: inherit;
+  -webkit-transition: color,0.6s,ease-in;
+  -moz-transition: color,0.6s,ease-in;
+  transition: color, 0.6s, ease-in;
+}
+
+/*a.symbol:before {
+    content: attr(title);
+    margin-right: 0.3em;
+    font-size: 130%;
+}*/
+/* line 150, ../sass/reset.scss */
+h1, h2 {
+  font-family: 'MindBlue',Helvetica Neue,Helvetica,Arial, sans-serif;
+  color: #353535;
+}
+
+/* line 156, ../sass/reset.scss */
+h1, .h1 {
+  margin: 0.6em 0px;
+}
+
+/* line 162, ../sass/reset.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  text-rendering: optimizelegibility;
+  line-height: 1.3;
+  padding: 0;
+  margin: 0;
+}
+
+/* reset */
+/* line 174, ../sass/reset.scss */
+body, html {
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 181, ../sass/reset.scss */
+body {
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  color: #b1aea6;
+  background: #fffcf5;
+  min-height: 800px;
+  -webkit-animation: bugfix infinite 1s;
+}
+
+@-webkit-keyframes bugfix {
+  /* line 190, ../sass/reset.scss */
+  from {
+    padding: 0;
+  }
+
+  /* line 191, ../sass/reset.scss */
+  to {
+    padding: 0;
+  }
+}
+
+/* border-box statt content-box */
+/* line 196, ../sass/reset.scss */
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 204, ../sass/reset.scss */
+.clearfix:before,
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* line 214, ../sass/reset.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 221, ../sass/reset.scss */
+a {
+  color: #ccc;
+  text-decoration: none;
+  display: block;
+}
+
+/* main in uebung container ist nur für die dimensionen zuständig   */
+/* line 230, ../sass/reset.scss */
+.container {
+  padding-top: 1em;
+  background: pink;
+}
+
+/* line 239, ../sass/reset.scss */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+  /* ie8 */
+  box-sizing: border-box;
+}
+
+/* line 250, ../sass/reset.scss */
+iframe, object, embed {
+  max-width: 100%;
+}
+
+/* line 13, ../sass/nav.scss */
+.searchholder {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  height: auto;
+}
+
+/* line 22, ../sass/nav.scss */
+.sb-search {
+  position: relative;
+  width: 100%;
+  min-width: 60px;
+  height: 60px;
+  float: right;
+  overflow: hidden;
+  /*-webkit-transition: width 0.3s;
+  -moz-transition: width 0.3s;
+  transition: width 0.3s;*/
+  -webkit-backface-visibility: hidden;
+  top: 0.25em;
+}
+
+/* line 36, ../sass/nav.scss */
+.sb-search-input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid #a6a6a6;
+  outline: none;
+  background-color: #ffffff;
+  width: 100%;
+  height: 60px;
+  margin: 0;
+  z-index: 10;
+  padding: 20px 65px 20px 20px;
+  font-family: inherit;
+  font-size: 20px;
+  color: #2c3e50;
+  display: block;
+}
+
+/* line 54, ../sass/nav.scss */
+.sb-search-input::-webkit-input-placeholder {
+  color: #efb480;
+}
+
+/* line 58, ../sass/nav.scss */
+.sb-search-input:-moz-placeholder {
+  color: #efb480;
+}
+
+/* line 62, ../sass/nav.scss */
+.sb-search-input::-moz-placeholder {
+  color: #efb480;
+}
+
+/* line 66, ../sass/nav.scss */
+.sb-search-input:-ms-input-placeholder {
+  color: #efb480;
+}
+
+/* line 71, ../sass/nav.scss */
+.sb-icon-search,
+.sb-search-submit {
+  width: 60px;
+  height: 60px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  line-height: 60px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* line 85, ../sass/nav.scss */
+.sb-search-submit {
+  background: #fff;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  color: transparent;
+  border: none;
+  outline: none;
+  z-index: -1;
+}
+
+/* line 96, ../sass/nav.scss */
+.sb-icon-search {
+  color: #fff;
+  background-color: #968437;
+  z-index: 90;
+  font-size: 22px;
+  font-family: 'fontawesome';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 115, ../sass/nav.scss */
+.sb-search.sb-search-open,
+.no-js .sb-search {
+  width: 100%;
+}
+
+/* line 120, ../sass/nav.scss */
+.sb-search.sb-search-open .sb-icon-search,
+.no-js .sb-search .sb-icon-search {
+  background: #da6d0d;
+  color: #fff;
+  z-index: 11;
+}
+
+/* line 127, ../sass/nav.scss */
+.sb-search.sb-search-open .sb-search-submit,
+.no-js .sb-search .sb-search-submit {
+  z-index: 90;
+}
+
+/* line 135, ../sass/nav.scss */
+header.header-main {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  display: block;
+  z-index: 991;
+  -webkit-transition: padding 0.4s ease;
+  -moz-transition: padding 0.4s ease;
+  transition: padding 0.4s ease;
+  -webkit-animation: fade-down ease-in-out 0.7s 0.1s both;
+  -moz-animation: fade-down ease-in-out 0.7s 0.1s both;
+  animation: fade-down ease-in-out 0.7s 0.1s both;
+  top: 0;
+  background: #ffffff;
+}
+/* line 152, ../sass/nav.scss */
+header.header-main .sticky {
+  position: fixed;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 2px rgba(74, 74, 74, 0);
+}
+
+/*  ------------------------- */
+/* line 169, ../sass/nav.scss */
+header.header-main .row_nav {
+  width: 100%;
+  min-height: 8em;
+  /*max-width: 95em;*/
+  /*margin-left: 0.25em;
+  margin-right: 0.25em;*/
+  overflow: hidden;
+}
+/* line 180, ../sass/nav.scss */
+header.header-main .row_nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*.extend {
+    background-color: pink;      
+    padding-bottom: 2em;
+}
+
+
+.extend120 {
+    background-color: grey;     
+    padding-bottom: 2em;
+}*/
+/* line 198, ../sass/nav.scss */
+header.header-main .nav {
+  text-align: right;
+  display: none;
+  color: pink;
+  z-index: 991;
+  height: auto;
+  position: relative;
+}
+/* line 206, ../sass/nav.scss */
+header.header-main .nav ul.nav_menu {
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 1em 0;
+  /*margin-right: 1em; */
+  margin-top: 2em;
+  transition: ease-in 0.5s;
+}
+
+/* line 220, ../sass/nav.scss */
+.nav li a:not(.btn)::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: white;
+  background: rgba(255, 255, 255, 0);
+  background: #c5a47e;
+  content: '';
+  opacity: 0;
+  font-weight: 100;
+  -webkit-transform: translateX(-50px);
+  -moz-transform: translateX(-50px);
+  -ms-transform: translateX(-50px);
+  -o-transform: translateX(-50px);
+  transform: translateX(-50px);
+  -webkit-transition: opacity 0.5s,-webkit-transform 0.5s;
+  -moz-transition: opacity 0.5s,-moz-transform 0.5s;
+  transition: opacity 0.5s,transform 0.5s;
+}
+
+/* line 243, ../sass/nav.scss */
+header.header-main .nav ul {
+  padding: 0;
+  font-size: 0.9em;
+  margin-top: 0;
+}
+/* line 248, ../sass/nav.scss */
+header.header-main .nav ul li {
+  position: relative;
+  display: inline-block;
+  margin-left: 1.5em;
+  vertical-align: middle;
+}
+/* line 256, ../sass/nav.scss */
+header.header-main .nav ul li a {
+  font-family: "Rosario", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: block;
+  color: #a6a6a6;
+  letter-spacing: 0.2;
+}
+/* line 262, ../sass/nav.scss */
+header.header-main .nav ul li a.btn {
+  border: 1px solid #000000;
+  letter-spacing: 0;
+  font-family: "quadon", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 90%;
+  padding: .8em 0.8em 0.8em;
+  line-height: 1;
+  height: auto;
+  display: inline-block;
+  vertical-align: text-top;
+}
+/* line 273, ../sass/nav.scss */
+header.header-main .nav ul li a.btn:hover {
+  color: #ffffff;
+  background-color: #cccccc;
+  border: 1px solid #cccccc;
+}
+/* line 282, ../sass/nav.scss */
+header.header-main .nav ul li a:hover:after, header.header-main .nav ul li a:focus:after {
+  opacity: 1;
+  transform: translateX(0px);
+}
+/* line 287, ../sass/nav.scss */
+header.header-main .nav ul li a:active {
+  color: #c5a47e !important;
+}
+
+/* line 305, ../sass/nav.scss */
+.collapse_search {
+  width: 3em;
+  display: inline-block;
+  color: #ffffff;
+  background-color: #3e3e3e;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: 400;
+  text-rendering: optimizelegibility;
+  line-height: 2.5em;
+  transition: all 0.6s ease-in-out;
+  text-align: center;
+  margin-left: 2em;
+}
+/* line 319, ../sass/nav.scss */
+.collapse_search:hover {
+  background-color: #717171;
+}
+
+/* line 325, ../sass/nav.scss */
+.collapse_search_update {
+  background-color: none;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  display: inline-block;
+  padding: 1em;
+  transition: all 0.6s ease-in-out;
+  max-width: 20em;
+  width: 20em;
+  margin-top: 1em;
+}
+/* line 336, ../sass/nav.scss */
+.collapse_search_update:hover {
+  background-color: #d9d9d9;
+  color: #ffffff;
+}
+/* line 341, ../sass/nav.scss */
+.collapse_search_update:hover span {
+  color: #ffffff;
+}
+/* line 347, ../sass/nav.scss */
+.collapse_search_update span {
+  color: #a6a6a6;
+  width: auto;
+  text-align: center;
+  font-size: 1.5em;
+  vertical-align: middle;
+  margin-left: 0.5em;
+  text-transform: uppercase;
+}
+/* line 357, ../sass/nav.scss */
+.collapse_search_update .fa-plus {
+  font-size: 1.5em;
+  font-weight: 200;
+  text-rendering: optimizelegibility;
+}
+
+/* line 365, ../sass/nav.scss */
+.collapse_search + input[type="checkbox"] {
+  display: none;
+}
+
+/* line 371, ../sass/nav.scss */
+.collapse_search + input:checked ~ .menu_search {
+  opacity: 1;
+  max-height: 1000em;
+  transform: scale(1);
+  overflow: visible;
+}
+
+/* line 379, ../sass/nav.scss */
+.collapse_search + input:checked ~ .nav {
+  margin-top: 2em;
+}
+
+/* line 386, ../sass/nav.scss */
+.collapse_search_update_hidelabel {
+  display: none;
+}
+
+/* line 392, ../sass/nav.scss */
+.menu_search_showmenu {
+  opacity: 1;
+  max-height: 1000em;
+  transform: scale(1);
+  overflow: visible;
+}
+
+/* line 401, ../sass/nav.scss */
+.menu_search {
+  position: relative;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  font-size: 1em;
+  transform: scale(0.5);
+  transition: 1s;
+}

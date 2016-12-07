@@ -1,0 +1,602 @@
+/*@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);}*/
+@font-face {
+  font-family: 'Rosario';
+  src: url("../fonts/Rosario-Bold.eot"), url("../fonts/Rosario-Bold.otf") format("opentype"), url("../fonts/Rosario-Bold") format("woff"), url("../fonts/Rosario-Bold.ttf") format("truetype"), url("../fonts/Rosario-Regular.eot"), url("../fonts/Rosario-Regular.otf") format("opentype"), url("../fonts/Rosario-Regular") format("woff"), url("../fonts/Rosario-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "tungsten";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/TungstenComp-Light.otf");
+}
+
+@font-face {
+  font-family: "quadon";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/quadon.otf");
+}
+
+@font-face {
+  font-family: 'Icomoon';
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'socicon';
+  src: url("../fonts/socicon-webfont.eot");
+  src: url("../fonts/socicon-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/socicon-webfont.woff") format("woff"), url("../fonts/socicon-webfont.ttf") format("truetype"), url("../fonts/socicon-webfont.svg#sociconregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  text-transform: initial;
+}
+
+@font-face {
+  font-family: 'fontawesome';
+  src: url("../fonts/FontAwesome.otf");
+  src: url("../fonts/fontawesome-webfont.eot") format("embedded-opentype"), url("../fonts/socicon-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  text-transform: initial;
+}
+
+/* line 84, ../sass/reset.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 92, ../sass/reset.scss */
+.socicon {
+  position: relative;
+  display: inline-block;
+  font-family: 'socicon';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  font-size: 2em;
+  top: 0.5em;
+}
+
+/* line 103, ../sass/reset.scss */
+.socicon:empty {
+  width: 1em;
+}
+
+/* line 107, ../sass/reset.scss */
+.socicon-twitter:before {
+  content: "a";
+}
+
+/* line 108, ../sass/reset.scss */
+.socicon-facebook:before {
+  content: "b";
+}
+
+/* line 109, ../sass/reset.scss */
+.socicon-youtube:before {
+  content: "r";
+}
+
+/* line 110, ../sass/reset.scss */
+.socicon-instagram:before {
+  content: "x";
+}
+
+/* line 115, ../sass/reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+/*.symbol, a.symbol:before {
+    font-family: "MonoSocialIconsFont";
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}*/
+/* line 133, ../sass/reset.scss */
+a {
+  color: #c5a47e;
+  text-decoration: none;
+  line-height: inherit;
+  -webkit-transition: color,0.6s,ease-in;
+  -moz-transition: color,0.6s,ease-in;
+  transition: color, 0.6s, ease-in;
+}
+
+/*a.symbol:before {
+    content: attr(title);
+    margin-right: 0.3em;
+    font-size: 130%;
+}*/
+/* line 150, ../sass/reset.scss */
+h1, h2 {
+  font-family: 'MindBlue',Helvetica Neue,Helvetica,Arial, sans-serif;
+  color: #353535;
+}
+
+/* line 156, ../sass/reset.scss */
+h1, .h1 {
+  margin: 0.6em 0px;
+}
+
+/* line 162, ../sass/reset.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  text-rendering: optimizelegibility;
+  line-height: 1.3;
+  padding: 0;
+  margin: 0;
+}
+
+/* reset */
+/* line 174, ../sass/reset.scss */
+body, html {
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 181, ../sass/reset.scss */
+body {
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  color: #b1aea6;
+  background: #fffcf5;
+  min-height: 800px;
+  -webkit-animation: bugfix infinite 1s;
+}
+
+@-webkit-keyframes bugfix {
+  /* line 190, ../sass/reset.scss */
+  from {
+    padding: 0;
+  }
+
+  /* line 191, ../sass/reset.scss */
+  to {
+    padding: 0;
+  }
+}
+
+/* border-box statt content-box */
+/* line 196, ../sass/reset.scss */
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 204, ../sass/reset.scss */
+.clearfix:before,
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* line 214, ../sass/reset.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 221, ../sass/reset.scss */
+a {
+  color: #ccc;
+  text-decoration: none;
+  display: block;
+}
+
+/* main in uebung container ist nur für die dimensionen zuständig   */
+/* line 230, ../sass/reset.scss */
+.container {
+  padding-top: 1em;
+  background: pink;
+}
+
+/* line 239, ../sass/reset.scss */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+  /* ie8 */
+  box-sizing: border-box;
+}
+
+/* line 250, ../sass/reset.scss */
+iframe, object, embed {
+  max-width: 100%;
+}
+
+/* line 8, ../sass/contact.scss */
+h2.sect-mainline {
+  margin: 0;
+  padding: 2em 0;
+  font-weight: 600;
+  text-rendering: optimizelegibility;
+  line-height: 1.3;
+  text-transform: uppercase;
+  font-family: "quadon", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #968437;
+}
+
+/* line 22, ../sass/contact.scss */
+section.sect-contact-maps {
+  background-color: #ffffff;
+}
+
+/* line 28, ../sass/contact.scss */
+.all_container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  /*background-color: pink;*/
+}
+
+/* line 35, ../sass/contact.scss */
+#map_container {
+  position: relative;
+}
+
+/* line 39, ../sass/contact.scss */
+#map {
+  min-height: 23em;
+  overflow: hidden;
+  padding-bottom: 22.25%;
+  padding-top: 30px;
+  position: relative;
+}
+
+/*#basic_map{
+position: relative;
+background-color: #E5E3DF;
+overflow: hidden;
+display: block;
+width: 95%;
+height: 350px;
+margin: 0px auto;
+box-shadow: 0px 5px 20px #CCC;
+  }*/
+/* line 60, ../sass/contact.scss */
+section.contact {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  background-color: #000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto 1em;
+  max-height: 600em;
+  max-width: 600em;
+  min-height: 30em;
+  background-image: url("../img/sprengel_eingang.jpg");
+  background-attachment: fixed;
+  margin: 0;
+}
+/* line 77, ../sass/contact.scss */
+section.contact::before {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-bottom: 50%;
+}
+/* line 86, ../sass/contact.scss */
+section.contact .row.intro {
+  z-index: 6;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+}
+/* line 95, ../sass/contact.scss */
+section.contact .ausprobieren {
+  position: relative;
+  left: -50%;
+  /*$main-line; $sanssub-line*/
+}
+/* line 102, ../sass/contact.scss */
+section.contact .ausprobieren h2 {
+  color: #c9b76a;
+  font-family: "quadon", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.065em;
+}
+/* line 108, ../sass/contact.scss */
+section.contact .ausprobieren h2 span {
+  color: #FFF;
+  letter-spacing: 0.065em;
+  text-transform: uppercase;
+  font-weight: 100;
+  line-height: 1;
+  text-shadow: -2px 2px 0px rgba(0, 0, 0, 0), -3px 3px 1px rgba(0, 0, 0, 0), -4px 4px 2px rgba(0, 0, 0, 0);
+  font-family: "tungsten", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* line 126, ../sass/contact.scss */
+section.contact .fa-envelope {
+  color: #ffffff;
+  z-index: 9;
+}
+/* line 134, ../sass/contact.scss */
+section.contact p {
+  color: #ffffff;
+  margin-top: 1em;
+}
+/* line 143, ../sass/contact.scss */
+section.contact .overlay_sub {
+  background-color: #000000;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* form */
+/* line 157, ../sass/contact.scss */
+section.sect-contact-form {
+  position: relative;
+  z-index: 0;
+  padding-bottom: 2em;
+  margin: 0;
+  background-color: #f8f8f8;
+  /* active state */
+  /* ANIMATIONS ================ */
+  @keyframes inputHighlighter {
+    /* line 332, ../sass/contact.scss */
+    from {
+      background: #5264AE;
+    }
+
+    /* line 333, ../sass/contact.scss */
+    to {
+      width: 0;
+      background: transparent;
+    }
+}
+
+}
+/* line 164, ../sass/contact.scss */
+section.sect-contact-form p.note_small {
+  color: #968437;
+  font-size: 80%;
+  text-align: left;
+  margin-left: 5%;
+  margin-bottom: 3em;
+  padding-top: 2em;
+}
+/* line 176, ../sass/contact.scss */
+section.sect-contact-form .text_group h4 {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: relative;
+  pointer-events: none;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+}
+/* line 189, ../sass/contact.scss */
+section.sect-contact-form .text_group textarea {
+  /*border: 2px solid $grey-subline;      */
+  min-height: 12em;
+  padding: 0;
+  width: 90%;
+  /*background-color: #ffffff;*/
+  font-size: 120%;
+  max-width: 54em;
+  border: none;
+}
+/* line 207, ../sass/contact.scss */
+section.sect-contact-form form {
+  position: relative;
+  max-width: 54em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 214, ../sass/contact.scss */
+section.sect-contact-form form div.group {
+  position: relative;
+  margin-bottom: 45px;
+  max-width: 54em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 223, ../sass/contact.scss */
+section.sect-contact-form form div.group input {
+  color: #a5a5a5;
+  font-size: 18px;
+  padding: 10px 0;
+  display: block;
+  width: 90%;
+  max-width: 60em;
+  border: none;
+  /*border-bottom:1px solid #757575;*/
+  margin-left: auto;
+  margin-right: auto;
+  transition: 1s ease all;
+}
+/* line 236, ../sass/contact.scss */
+section.sect-contact-form form div.group input:required {
+  box-shadow: none;
+}
+/* line 240, ../sass/contact.scss */
+section.sect-contact-form form div.group input:focus {
+  outline: none;
+  border-bottom: none;
+}
+/* line 245, ../sass/contact.scss */
+section.sect-contact-form form div.group input:focus ~ label, section.sect-contact-form form div.group input:valid ~ label {
+  top: -20px;
+  font-size: 1em;
+  color: #968437;
+}
+/* line 252, ../sass/contact.scss */
+section.sect-contact-form form div.group input[type=submit] {
+  background-color: #d6c990;
+  color: white;
+  text-transform: uppercase;
+  text-rendering: optimizelegibility;
+}
+/* line 259, ../sass/contact.scss */
+section.sect-contact-form form div.group input[type=submit]:hover {
+  background-color: #968437;
+}
+/* line 268, ../sass/contact.scss */
+section.sect-contact-form form div.group label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5%;
+  top: 10px;
+  transition: 0.3s ease all;
+}
+/* line 280, ../sass/contact.scss */
+section.sect-contact-form form div.group .bar {
+  position: relative;
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 288, ../sass/contact.scss */
+section.sect-contact-form form div.group .bar:before, section.sect-contact-form form div.group .bar:after {
+  content: '';
+  height: 4px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background-color: #cccccc;
+  transition: 0.2s ease all;
+}
+/* line 298, ../sass/contact.scss */
+section.sect-contact-form form div.group .bar:before {
+  left: 50%;
+}
+/* line 302, ../sass/contact.scss */
+section.sect-contact-form form div.group .bar:after {
+  right: 50%;
+}
+/* line 307, ../sass/contact.scss */
+section.sect-contact-form form div.group input:focus ~ .bar:before, section.sect-contact-form form div.group input:focus ~ .bar:after {
+  width: 50%;
+}
+/* line 315, ../sass/contact.scss */
+section.sect-contact-form .highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+/* line 326, ../sass/contact.scss */
+section.sect-contact-form input:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease;
+}
+
+/* line 339, ../sass/contact.scss */
+.transport_icon {
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 346, ../sass/contact.scss */
+section.sect-work .accordion dt {
+  border-top: none;
+  cursor: auto;
+}
+
+/* line 357, ../sass/contact.scss */
+section.sect-work .dcn_announcement h2 {
+  margin: 0;
+  padding: 1.5em 0 0 0;
+}
+/* line 364, ../sass/contact.scss */
+section.sect-work .dcn_announcement p {
+  padding-bottom: 1.5em;
+}
+/* line 372, ../sass/contact.scss */
+section.sect-work label.dst_bottom {
+  margin-bottom: 1.5em;
+}
+/* line 377, ../sass/contact.scss */
+section.sect-work .smallmenu {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+/* line 385, ../sass/contact.scss */
+section.sect-work .smallmenu h2 {
+  margin: 0;
+  padding: 2em 0;
+  font-weight: 600;
+  text-rendering: optimizelegibility;
+  line-height: 1.3;
+  text-transform: uppercase;
+  font-family: "quadon", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #968437;
+}
+/* line 397, ../sass/contact.scss */
+section.sect-work .smallmenu ul {
+  list-style: none outside none;
+  margin: 0 auto;
+  width: 70%;
+}
+/* line 403, ../sass/contact.scss */
+section.sect-work .smallmenu ul li:nth-of-type(1):before {
+  content: "\f08e";
+  font-family: fontawesome;
+  margin-right: 0.5em;
+  font-size: 1.2em;
+}
+/* line 410, ../sass/contact.scss */
+section.sect-work .smallmenu ul li:nth-of-type(2):before {
+  content: "\f09e";
+  font-family: fontawesome;
+  margin-right: 0.5em;
+  font-size: 1.2em;
+}
+/* line 417, ../sass/contact.scss */
+section.sect-work .smallmenu ul li:nth-of-type(3):before {
+  content: "\f1f9";
+  font-family: fontawesome;
+  margin-right: 0.5em;
+  font-size: 1.2em;
+}
+/* line 424, ../sass/contact.scss */
+section.sect-work .smallmenu ul li:nth-of-type(4):before {
+  content: "\f0e8";
+  font-family: fontawesome;
+  margin-right: 0.5em;
+  font-size: 1.2em;
+}
+/* line 430, ../sass/contact.scss */
+section.sect-work .smallmenu ul li {
+  display: inline-block;
+  margin: 0  5em 0 0;
+  padding-bottom: 2em;
+  text-rendering: optimizelegibility;
+}
+/* line 439, ../sass/contact.scss */
+section.sect-work .smallmenu ul li span:hover {
+  color: #d9d9d9;
+}
