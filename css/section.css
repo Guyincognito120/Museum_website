@@ -1,0 +1,1154 @@
+/*@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);}*/
+@font-face {
+  font-family: 'Rosario';
+  src: url("../fonts/Rosario-Bold.eot"), url("../fonts/Rosario-Bold.otf") format("opentype"), url("../fonts/Rosario-Bold") format("woff"), url("../fonts/Rosario-Bold.ttf") format("truetype"), url("../fonts/Rosario-Regular.eot"), url("../fonts/Rosario-Regular.otf") format("opentype"), url("../fonts/Rosario-Regular") format("woff"), url("../fonts/Rosario-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "tungsten";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/TungstenComp-Light.otf");
+}
+
+@font-face {
+  font-family: "quadon";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/quadon.otf");
+}
+
+@font-face {
+  font-family: 'Icomoon';
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'socicon';
+  src: url("../fonts/socicon-webfont.eot");
+  src: url("../fonts/socicon-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/socicon-webfont.woff") format("woff"), url("../fonts/socicon-webfont.ttf") format("truetype"), url("../fonts/socicon-webfont.svg#sociconregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  text-transform: initial;
+}
+
+@font-face {
+  font-family: 'fontawesome';
+  src: url("../fonts/FontAwesome.otf");
+  src: url("../fonts/fontawesome-webfont.eot") format("embedded-opentype"), url("../fonts/socicon-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  text-transform: initial;
+}
+
+/* line 84, ../sass/reset.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 92, ../sass/reset.scss */
+.socicon {
+  position: relative;
+  display: inline-block;
+  font-family: 'socicon';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  font-size: 2em;
+  top: 0.5em;
+}
+
+/* line 103, ../sass/reset.scss */
+.socicon:empty {
+  width: 1em;
+}
+
+/* line 107, ../sass/reset.scss */
+.socicon-twitter:before {
+  content: "a";
+}
+
+/* line 108, ../sass/reset.scss */
+.socicon-facebook:before {
+  content: "b";
+}
+
+/* line 109, ../sass/reset.scss */
+.socicon-youtube:before {
+  content: "r";
+}
+
+/* line 110, ../sass/reset.scss */
+.socicon-instagram:before {
+  content: "x";
+}
+
+/* line 115, ../sass/reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+/*.symbol, a.symbol:before {
+    font-family: "MonoSocialIconsFont";
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}*/
+/* line 133, ../sass/reset.scss */
+a {
+  color: #c5a47e;
+  text-decoration: none;
+  line-height: inherit;
+  -webkit-transition: color,0.6s,ease-in;
+  -moz-transition: color,0.6s,ease-in;
+  transition: color, 0.6s, ease-in;
+}
+
+/*a.symbol:before {
+    content: attr(title);
+    margin-right: 0.3em;
+    font-size: 130%;
+}*/
+/* line 150, ../sass/reset.scss */
+h1, h2 {
+  font-family: 'MindBlue',Helvetica Neue,Helvetica,Arial, sans-serif;
+  color: #353535;
+}
+
+/* line 156, ../sass/reset.scss */
+h1, .h1 {
+  margin: 0.6em 0px;
+}
+
+/* line 162, ../sass/reset.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  text-rendering: optimizelegibility;
+  line-height: 1.3;
+  padding: 0;
+  margin: 0;
+}
+
+/* reset */
+/* line 174, ../sass/reset.scss */
+body, html {
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 181, ../sass/reset.scss */
+body {
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  color: #b1aea6;
+  background: #fffcf5;
+  min-height: 800px;
+  -webkit-animation: bugfix infinite 1s;
+}
+
+@-webkit-keyframes bugfix {
+  /* line 190, ../sass/reset.scss */
+  from {
+    padding: 0;
+  }
+
+  /* line 191, ../sass/reset.scss */
+  to {
+    padding: 0;
+  }
+}
+
+/* border-box statt content-box */
+/* line 196, ../sass/reset.scss */
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 204, ../sass/reset.scss */
+.clearfix:before,
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* line 214, ../sass/reset.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 221, ../sass/reset.scss */
+a {
+  color: #ccc;
+  text-decoration: none;
+  display: block;
+}
+
+/* main in uebung container ist nur für die dimensionen zuständig   */
+/* line 230, ../sass/reset.scss */
+.container {
+  padding-top: 1em;
+  background: pink;
+}
+
+/* line 239, ../sass/reset.scss */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+  /* ie8 */
+  box-sizing: border-box;
+}
+
+/* line 250, ../sass/reset.scss */
+iframe, object, embed {
+  max-width: 100%;
+}
+
+/* line 8, ../sass/section.scss */
+.btn_access {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-family: quadon,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  /*font-family: "verlag","Helvetica Neue",Helvetica,Arial,sans-serif;*/
+  font-weight: 600;
+  background-color: #968437;
+  /*background: none;*/
+  text-transform: uppercase;
+  font-size: 1em;
+  line-height: 1.4em;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  border: 2px solid #968437;
+  padding: 0.8em .5em 0.6em;
+  position: relative;
+  outline: 0px none;
+  z-index: 3;
+  white-space: nowrap;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+  top: 2em;
+  -webkit-box-shadow: 0px 10px 23px -11px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 10px 23px -11px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 10px 23px -11px rgba(0, 0, 0, 0.4);
+}
+/* line 38, ../sass/section.scss */
+.btn_access:hover {
+  color: #fcea9d;
+  border: 2px solid #fcea9d;
+}
+
+/* -------------- hr --------------------  */
+/* line 50, ../sass/section.scss */
+hr {
+  border: solid #ddd;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 1.5em 0;
+  height: 0;
+}
+
+/* line 58, ../sass/section.scss */
+hr.sep {
+  display: block;
+  width: 25%;
+  margin: .1em  auto;
+  border: 1px solid #c5a47e;
+  /*2d2d2d*/
+  transition: ease-in 0.5s;
+}
+
+/* line 66, ../sass/section.scss */
+hr.sep_grey {
+  display: block;
+  width: 25%;
+  margin: .1em  auto;
+  border: 1px solid #424242;
+  transition: ease-in 0.5s;
+}
+
+/* line 74, ../sass/section.scss */
+.bg-alpha hr.sep {
+  border-color: #fff;
+}
+
+/* line 78, ../sass/section.scss */
+.sep-wide {
+  width: 30% !important;
+}
+
+/* line 82, ../sass/section.scss */
+.sep-wide-vst {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 90, ../sass/section.scss */
+.sep-wide_list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #545243;
+  /*border:1px dotted#c5a47e;*/
+  /*border-image:url('../img/border_image.png') 4 repeat;*/
+}
+
+/* line 99, ../sass/section.scss */
+.sep_small {
+  display: block;
+  width: 10%;
+  margin: .1em auto;
+  border: 1x solid #c5a47e;
+}
+
+/* line 108, ../sass/section.scss */
+.sep_small_50 {
+  display: block;
+  width: 50%;
+  margin: .1em auto;
+  border: 1x solid #c5a47e;
+}
+
+/*.welcome hr{
+          -webkit-transition:all 1s ease;
+          -moz-transition:all 1s ease;
+          transition:all 1s ease;
+  }*/
+/* ------------------------------------------ */
+ /*.row {
+    max-width: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+} */
+/* line 136, ../sass/section.scss */
+.row:after {
+  content: ".";
+  display: block;
+  height: 0px;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 145, ../sass/section.scss */
+section {
+  z-index: 0;
+  position: relative;
+  float: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+/* line 155, ../sass/section.scss */
+section p {
+  margin: 0px 0px 0.75em;
+  font-family: "quadon","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* line 162, ../sass/section.scss */
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: block;
+  top: 1em;
+  left: 0px;
+  z-index: 2;
+  /*background-color: rgb(255,255,255);*/
+  opacity: 0.7;
+  -webkit-transition: background-color 1s ease-in-out;
+  -moz-transition: background-color 1s ease-in-out;
+  transition: background-color 1s ease-in-out;
+}
+
+/* line 180, ../sass/section.scss */
+.overlay-alpha {
+  background-color: #000000;
+  opacity: 0.7;
+}
+
+/* line 185, ../sass/section.scss */
+section.welcome {
+  background-image: url("../img/sprengel_outside_mobile120.jpg");
+  background-attachment: fixed;
+  background-color: #000;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  margin: 0 auto;
+  max-height: 600em;
+  max-width: 600em;
+  min-height: 37em;
+  overflow: hidden;
+  position: relative;
+}
+/* line 201, ../sass/section.scss */
+section.welcome::before {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-bottom: 50%;
+}
+/* line 210, ../sass/section.scss */
+section.welcome p {
+  color: #ffffff;
+  margin-top: 1em;
+}
+/* line 217, ../sass/section.scss */
+section.welcome .ausprobieren {
+  position: relative;
+  left: -50%;
+}
+
+/* line 227, ../sass/section.scss */
+.welcome .row.intro {
+  /*position: relative;
+  
+  transform: translateY(-40%);*/
+  z-index: 6;
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  /*text-align: center;
+  animation: 3s ease-in-out 1s normal both 1 fade-in;
+  white-space:nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  top: 7em;*/
+}
+
+/* line 247, ../sass/section.scss */
+section.sect-intro {
+  position: relative;
+  background: #ffffff;
+  z-index: 8;
+  padding: 4em 0px;
+}
+/* line 254, ../sass/section.scss */
+section.sect-intro header {
+  position: relative;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 262, ../sass/section.scss */
+section.sect-intro p {
+  margin: 1em auto;
+  color: #999999;
+  line-height: 1.8em;
+  max-width: 40em;
+}
+
+/* line 272, ../sass/section.scss */
+h1.intro-title {
+  /*margin: 0.05em auto 0px;*/
+  text-align: center;
+  color: #FFF;
+  /*color: darken($ci-color, 20%); */
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  /*font-weight: 100;*/
+  font-style: bold;
+  line-height: 1;
+  /*text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.3), -3px 3px 1px rgba(0, 0, 0, 0.5), -4px 4px 2px rgba(0, 0, 0, 0.2);*/
+  font-family: "tungsten","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 4em;
+}
+/* line 288, ../sass/section.scss */
+h1.intro-title:before {
+  content: url("../img/sprengel_logo_120.png");
+  display: block;
+}
+/* line 299, ../sass/section.scss */
+h1.intro-title:after {
+  width: 25%;
+  content: "";
+  border-bottom: 2px solid #4b421c;
+  display: block;
+  animation: animationFrames ease-in .7s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode: forwards;
+  -webkit-animation: animationFrames ease-in .7s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation: animationFrames ease-in .7s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -moz-animation-fill-mode: forwards;
+  -o-animation: animationFrames ease-in .7s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -o-animation-fill-mode: forwards;
+  -ms-animation: animationFrames ease-in .7s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+  -ms-animation-fill-mode: forwards;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5em;
+}
+
+@keyframes animationFrames {
+  /* line 333, ../sass/section.scss */
+  0% {
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  /* line 337, ../sass/section.scss */
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@-moz-keyframes animationFrames {
+  /* line 343, ../sass/section.scss */
+  0% {
+    -moz-transform: scaleX(0);
+    -moz-transition: all 0.3s ease-in-out 0s;
+  }
+
+  /* line 347, ../sass/section.scss */
+  100% {
+    -moz-transform: scaleX(1);
+  }
+}
+
+@-webkit-keyframes animationFrames {
+  /* line 353, ../sass/section.scss */
+  0% {
+    -webkit-transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+  }
+
+  /* line 357, ../sass/section.scss */
+  100% {
+    -webkit-transform: scaleX(1);
+  }
+}
+
+@-o-keyframes animationFrames {
+  /* line 363, ../sass/section.scss */
+  0% {
+    -o-transform: scaleX(0);
+    -o-transition: all 0.3s ease-in-out 0s;
+  }
+
+  /* line 367, ../sass/section.scss */
+  100% {
+    -o-transform: scaleX(1);
+  }
+}
+
+@-ms-keyframes animationFrames {
+  /* line 373, ../sass/section.scss */
+  0% {
+    -ms-transform: scaleX(0);
+    -ms-transition: all 0.3s ease-in-out 0s;
+  }
+
+  /* line 377, ../sass/section.scss */
+  100% {
+    -ms-transform: scaleX(1);
+  }
+}
+
+/* line 382, ../sass/section.scss */
+.sect-work {
+  z-index: 99;
+  background-color: #ffffff;
+}
+/* line 387, ../sass/section.scss */
+.sect-work .art_wr {
+  position: relative;
+  max-width: 80em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 395, ../sass/section.scss */
+.sect-work h3 {
+  margin: 1em 0px 0.5em;
+}
+/* line 399, ../sass/section.scss */
+.sect-work p {
+  padding: 0px 2%;
+  font-size: 105%;
+  margin: 0px auto;
+}
+/* line 404, ../sass/section.scss */
+.sect-work article {
+  position: relative;
+  text-align: center;
+  /*min-height: 23em;*/
+  /* vielleicht ändern */
+  overflow: hidden;
+  /*.overlay_post  {
+                      
+                      background-color: none;
+                      background-color: rgba(0, 0, 0, 0.4);
+                      
+                  }*/
+}
+/* line 410, ../sass/section.scss */
+.sect-work article .content {
+  min-height: 23em;
+}
+/* line 417, ../sass/section.scss */
+.sect-work article.art_120 {
+  overflow: visible;
+  /*height: 55em;*/
+  position: relative;
+}
+/* line 426, ../sass/section.scss */
+.sect-work article a:hover hr.sep {
+  width: 40%;
+  opacity: 1;
+}
+/* line 432, ../sass/section.scss */
+.sect-work article a img {
+  display: block;
+  height: auto;
+  box-sizing: border-box;
+  width: 100%;
+}
+/* line 443, ../sass/section.scss */
+.sect-work article .overlay {
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* line 450, ../sass/section.scss */
+.sect-work article .overlay_post {
+  background-color: rgba(0, 0, 0, 0);
+  transition: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: block;
+  top: 1em;
+  left: 0px;
+  z-index: 2;
+}
+/* line 464, ../sass/section.scss */
+.sect-work article h2 {
+  font-family: "quadon", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #968437;
+  text-transform: uppercase;
+  /*border-top: 1px solid $ci-color; 
+  border-bottom: 1px solid $ci-color;*/
+  line-height: 1.5em;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+}
+/* line 477, ../sass/section.scss */
+.sect-work article h2.vst_x2 {
+  color: #ffffff;
+  border-top: none;
+  border-bottom: none;
+  text-rendering: optimizelegibility;
+  font-size: 2em;
+}
+/* line 487, ../sass/section.scss */
+.sect-work article h3 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 200;
+  margin: 0;
+}
+/* line 496, ../sass/section.scss */
+.sect-work article h3.route {
+  text-transform: uppercase;
+  color: #968437;
+  font-size: 1.2em;
+  font-weight: 200;
+}
+/* line 503, ../sass/section.scss */
+.sect-work article p {
+  color: #a6a6a6;
+}
+/* line 507, ../sass/section.scss */
+.sect-work article p span {
+  color: #404040;
+  padding-top: 0.5em;
+}
+/* line 514, ../sass/section.scss */
+.sect-work article .overlay {
+  background-color: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+/* line 529, ../sass/section.scss */
+.sect-work a {
+  /*color: $grey-subline;*/
+  width: 100%;
+  display: block;
+  /*position: relative;*/
+  /*background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 1);*/
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+/* line 542, ../sass/section.scss */
+.sect-work a.yo {
+  height: 100%;
+}
+/* line 548, ../sass/section.scss */
+.sect-work .cols {
+  float: left;
+  min-height: 1px;
+  position: relative;
+  width: 100%;
+  padding: 0;
+}
+/* line 559, ../sass/section.scss */
+.sect-work ul.mobile_post {
+  position: absolute;
+  width: 86%;
+  height: 100%;
+  z-index: 999;
+  top: 60%;
+  list-style: none outside none;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+/* line 571, ../sass/section.scss */
+.sect-work ul.mobile_post li {
+  position: relative;
+  display: inline-block;
+  width: 60%;
+  left: -5%;
+}
+/* line 579, ../sass/section.scss */
+.sect-work ul.mobile_post li:first-of-type {
+  list-style: none outside none;
+  font-size: 1em;
+  font-family: "quadon","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #FFF;
+  text-transform: uppercase;
+  border: 2px solid #FFF;
+  padding: 0.5em;
+  transition: all 0.5s ease-in-out 0s;
+}
+/* line 595, ../sass/section.scss */
+.sect-work ul.work-list {
+  width: 80%;
+  position: absolute;
+  bottom: 12em;
+  text-decoration: none;
+  z-index: 10;
+  text-align: center;
+  padding: 0;
+  left: 10%;
+  right: 10%;
+}
+/* line 606, ../sass/section.scss */
+.sect-work ul.work-list.list_post {
+  display: none;
+}
+/* line 613, ../sass/section.scss */
+.sect-work ul.work-list li {
+  display: inline-block;
+  opacity: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 1em;
+  font-family: "quadon","Helvetica Neue",Helvetica,Arial,sans-serif;
+  padding: 0px 0.5em;
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  transition: opacity ease-in-out 1s;
+                /* &:after {
+             
+                    content: "/";
+                    width: 0px;
+                    height: 0px;
+                    background: none repeat scroll 0% 0% #FFF;
+                    position: absolute;
+                    right: -0.05em;
+                    top: -0.01em;
+
+            }  */
+}
+/* line 629, ../sass/section.scss */
+.sect-work ul.work-list li.link_post {
+  border: 2px solid #ffffff;
+  text-transform: uppercase;
+  padding: 1em;
+  font-size: 1.4em;
+  transition: all 0.5s ease-in-out 0s;
+}
+/* line 637, ../sass/section.scss */
+.sect-work ul.work-list li.link_post:hover {
+  color: #cccccc;
+  border: 2px solid #cccccc;
+}
+/* line 644, ../sass/section.scss */
+.sect-work ul.work-list li.link_post:after {
+  display: none;
+}
+/* line 668, ../sass/section.scss */
+.sect-work ul.work-list li:hover {
+  opacity: 1;
+}
+
+/* line 677, ../sass/section.scss */
+.sect-announce {
+  background-color: #f8f8f8;
+}
+/* line 686, ../sass/section.scss */
+.sect-announce ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+/* line 691, ../sass/section.scss */
+.sect-announce ul li:nth-child(2) {
+  margin-left: 1em;
+}
+/* line 700, ../sass/section.scss */
+.sect-announce .whitespace {
+  position: relative;
+  width: 100%;
+  height: 4em;
+  background-color: #ffffff;
+}
+/* line 709, ../sass/section.scss */
+.sect-announce h2.vst_mainlink {
+  color: #a6a6a6;
+  margin: 1em 0;
+  font-size: 2em;
+}
+/* line 717, ../sass/section.scss */
+.sect-announce p.vst_description {
+  margin: 0;
+  padding-bottom: 2em;
+}
+
+/*--------- sect-work ---------*/
+/* line 726, ../sass/section.scss */
+section.sect-nl {
+  padding-top: 4em;
+  background-color: #ffffff;
+}
+/* line 731, ../sass/section.scss */
+section.sect-nl h2 {
+  margin: 0;
+  padding-bottom: 1em;
+}
+/* line 736, ../sass/section.scss */
+section.sect-nl p {
+  padding: 0px 2%;
+  font-size: 105%;
+  padding-top: 1em;
+}
+
+/* line 746, ../sass/section.scss */
+.sect-work article a:hover hr.sep, .sect-posts article a:hover hr.sep {
+  width: 40%;
+}
+
+/* line 750, ../sass/section.scss */
+.sect-work article a:hover .work-list li, .sect-posts article a:hover .work-list li {
+  opacity: 1;
+}
+
+/* line 755, ../sass/section.scss */
+.sect-work article a:hover .overlay.purple, .sect-posts article a:hover .overlay.purple {
+  background-color: #230a47;
+}
+
+/* line 759, ../sass/section.scss */
+.sect-work article a:hover .overlay.navy, .sect-posts article a:hover .overlay.navy {
+  background-color: #0c1c3d;
+}
+
+/* line 763, ../sass/section.scss */
+.sect-work article a:hover .overlay.blue, .sect-posts article a:hover .overlay.blue {
+  background-color: #3D92CF;
+}
+
+/* line 767, ../sass/section.scss */
+.sect-work article a:hover .overlay.green, .sect-posts article a:hover .overlay.green {
+  background-color: #237a77;
+}
+
+/* line 771, ../sass/section.scss */
+.sect-work article a:hover .overlay.red, .sect-posts article a:hover .overlay.red {
+  background-color: #9e302e;
+}
+
+/* line 775, ../sass/section.scss */
+.sect-work article a:hover .overlay.orange, .sect-posts article a:hover .overlay.orange {
+  background-color: #c55d2f;
+}
+
+/* line 779, ../sass/section.scss */
+.sect-work article a:hover .overlay.green, .sect-posts article a:hover .overlay.green {
+  background-color: #3b9075;
+}
+
+/* line 783, ../sass/section.scss */
+.sect-work article a:hover .overlay.gold, .sect-posts article a:hover .overlay.gold {
+  background-color: #c5a47e;
+}
+
+/*.sect-work article a:hover .overlay.overlay-oldcreek,.overlay_post.overlay-oldcreek,.sect-posts article a:hover .overlay.overlay-oldcreek{
+    background-color:#c4856e;
+}*/
+/*
+
+.sect-work article a:hover .overlay-oldcreek {
+    background-color: rgb(0,0,0);
+    opacity:0.8;
+    filter: alpha(opacity=80); 
+    opacity: 0.8;  
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=80)";
+}
+
+*/
+/* line 806, ../sass/section.scss */
+.sect-work article a:hover .overlay.overlay-pronto, .sect-posts article a:hover .overlay.overlay-pronto {
+  background-color: #5CD78C;
+}
+
+/* line 810, ../sass/section.scss */
+.sect-work article a:hover .overlay.overlay-aeris, .sect-posts article a:hover .overlay.overlay-aeris {
+  background-color: #0a2a3b;
+}
+
+/* line 814, ../sass/section.scss */
+.sect-work article a:hover .overlay.overlay-endurance, .sect-posts article a:hover .overlay.overlay-endurance {
+  background-color: #82c2d1;
+}
+
+/* line 818, ../sass/section.scss */
+.sect-work article a:hover .overlay.overlay-chefn, .sect-posts article a:hover .overlay.overlay-chefn {
+  background-color: #25c9d2;
+}
+
+/* line 822, ../sass/section.scss */
+.sect-work article a:hover .overlay.overlay-macwashingmachine, .sect-posts article a:hover .overlay.overlay-macwashingmachine {
+  background-color: #243542;
+}
+
+/* line 826, ../sass/section.scss */
+.sect-work article a:hover .overlay.overlay-mollymoon, .sect-posts article a:hover .overlay.overlay-mollymoon {
+  background-color: #7bb6c6;
+}
+
+/* line 830, ../sass/section.scss */
+.sect-work article a:hover .overlay.overlay-seattlemet, .sect-posts article a:hover .overlay.overlay-seattlemet {
+  background-color: #e4ba1f;
+}
+
+/* line 834, ../sass/section.scss */
+.sect-work article a:hover .overlay.overlay-watson, .sect-posts article a:hover .overlay.overlay-watson {
+  background-color: #f5bf68;
+}
+
+/* line 838, ../sass/section.scss */
+.sect-work article a:hover .overlay.overlay-polaris, .sect-posts article a:hover .overlay.overlay-polaris {
+  background-color: #902783;
+}
+
+/* line 842, ../sass/section.scss */
+.sect-work article a:hover .overlay.overlay-amosmorgan, .sect-posts article a:hover .overlay.overlay-amosmorgan {
+  background-color: #ab6130;
+}
+
+/* line 846, ../sass/section.scss */
+.sect-work article a:hover .overlay.overlay-juno, .sect-posts article a:hover .overlay.overlay-juno {
+  background-color: #2c5b75;
+}
+
+/* line 850, ../sass/section.scss */
+.sect-work article a:hover .overlay.overlay-crossroads, .sect-posts article a:hover .overlay.overlay-crossroads {
+  background-color: #824d76;
+}
+
+/* line 856, ../sass/section.scss */
+.sect-work article a:hover .work-list li:nth-of-type(1), .sect-posts article a:hover .work-list li:nth-of-type(1) {
+  -webkit-transition-delay: 0.1s;
+  -moz-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+/* line 862, ../sass/section.scss */
+.sect-work article a:hover .work-list li:nth-of-type(2), .sect-posts article a:hover .work-list li:nth-of-type(2) {
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  transition-delay: 0.4s;
+}
+
+/* line 868, ../sass/section.scss */
+.sect-work article a:hover .work-list li:nth-of-type(3), .sect-posts article a:hover .work-list li:nth-of-type(3) {
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  transition-delay: 1s;
+}
+
+/* line 874, ../sass/section.scss */
+.sect-work article a:hover .work-list li:nth-of-type(4), .sect-posts article a:hover .work-list li:nth-of-type(4) {
+  -webkit-transition-delay: 1.4s;
+  -moz-transition-delay: 1.4s;
+  transition-delay: 1.4s;
+}
+
+/* line 880, ../sass/section.scss */
+.sect-work article a:hover .work-list li:nth-of-type(5), .sect-posts article a:hover .work-list li:nth-of-type(5) {
+  -webkit-transition-delay: 1.8s;
+  -moz-transition-delay: 1.8s;
+  transition-delay: 1.8s;
+}
+
+/* line 886, ../sass/section.scss */
+.sect-work article a:hover .work-list li:nth-of-type(6), .sect-posts article a:hover .work-list li:nth-of-type(6) {
+  -webkit-transition-delay: 2.2s;
+  -moz-transition-delay: 2.2s;
+  transition-delay: 2.2s;
+}
+
+/*****  scroller  *****/
+/* line 897, ../sass/section.scss */
+#scroller {
+  position: fixed;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  right: -200px;
+  bottom: 60px;
+  overflow: hidden;
+  z-index: 999;
+  background-color: #3e3e3e;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  z-index: 999;
+  transition: all 0.6s ease-in-out;
+  box-shadow: 0px 2px 2px #4a4a4a;
+  box-shadow: 0px 2px 2px rgba(74, 74, 74, 0.5);
+  line-height: 2em;
+  font-size: 1.2em;
+  font-weight: 400;
+  text-rendering: optimizelegibility;
+}
+/* line 918, ../sass/section.scss */
+#scroller i {
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  display: block;
+  line-height: 2em;
+}
+/* line 925, ../sass/section.scss */
+#scroller i:hover {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  line-height: 2em;
+  text-align: center;
+}
+/* line 938, ../sass/section.scss */
+#scroller:hover {
+  background-color: #717171;
+}
+
+/*****  read more ******/
+/* line 950, ../sass/section.scss */
+section {
+  -webkit-transition: .125s linear;
+  -moz-transition: .125s linear;
+  -ms-transition: .125s linear;
+  -o-transition: .125s linear;
+  transition: .125s linear;
+}
+
+/* line 958, ../sass/section.scss */
+input[type=checkbox] {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+/* line 969, ../sass/section.scss */
+[for="read_more"] {
+  position: absolute;
+  bottom: -3rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: .65rem;
+  box-shadow: inset 1px 1px rgba(0, 0, 0, 0.1), inset -1px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* line 979, ../sass/section.scss */
+[for="read_more"]:hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+/* line 984, ../sass/section.scss */
+[for="read_more"] span:last-of-type {
+  display: none;
+  visibility: hidden;
+}
+
+/* line 989, ../sass/section.scss */
+input[type=checkbox]:checked ~ section {
+  display: block;
+  visibility: visible;
+  width: 100%;
+}
+
+/* line 995, ../sass/section.scss */
+input[type=checkbox]:checked ~ figure {
+  width: 100%;
+}
+
+/* line 997, ../sass/section.scss */
+input[type=checkbox]:checked ~ [for="read_more"] span:first-of-type {
+  display: none;
+  visibility: hidden;
+}
+
+/* line 1002, ../sass/section.scss */
+input[type=checkbox]:checked ~ [for="read_more"] span:last-of-type {
+  display: block;
+  visibility: visible;
+}

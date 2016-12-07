@@ -1,0 +1,17 @@
+/* ----- IE8 - IE10 -------*/
+/* line 5, ../sass/ie.scss */
+.overlay, [class*="overlay"] {
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#6f5405, endColorstr=#655405);
+}
+
+/* line 12, ../sass/ie.scss */
+.no-borderimage .dotted-border {
+  border-image: none;
+  border: 1px solid #ccc;
+}
+
+/* line 18, ../sass/ie.scss */
+footer.footer-main .row nav ul li a p.social_name {
+  -ms-transform: translate(50px, 100px);
+  /* IE 9 */
+}

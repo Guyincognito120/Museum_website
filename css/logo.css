@@ -1,0 +1,443 @@
+/* --------------logo  --------------  */
+/*@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);}*/
+@font-face {
+  font-family: 'Rosario';
+  src: url("../fonts/Rosario-Bold.eot"), url("../fonts/Rosario-Bold.otf") format("opentype"), url("../fonts/Rosario-Bold") format("woff"), url("../fonts/Rosario-Bold.ttf") format("truetype"), url("../fonts/Rosario-Regular.eot"), url("../fonts/Rosario-Regular.otf") format("opentype"), url("../fonts/Rosario-Regular") format("woff"), url("../fonts/Rosario-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "tungsten";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/TungstenComp-Light.otf");
+}
+
+@font-face {
+  font-family: "quadon";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/quadon.otf");
+}
+
+@font-face {
+  font-family: 'Icomoon';
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'socicon';
+  src: url("../fonts/socicon-webfont.eot");
+  src: url("../fonts/socicon-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/socicon-webfont.woff") format("woff"), url("../fonts/socicon-webfont.ttf") format("truetype"), url("../fonts/socicon-webfont.svg#sociconregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  text-transform: initial;
+}
+
+@font-face {
+  font-family: 'fontawesome';
+  src: url("../fonts/FontAwesome.otf");
+  src: url("../fonts/fontawesome-webfont.eot") format("embedded-opentype"), url("../fonts/socicon-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  text-transform: initial;
+}
+
+/* line 84, ../sass/reset.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 92, ../sass/reset.scss */
+.socicon {
+  position: relative;
+  display: inline-block;
+  font-family: 'socicon';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  font-size: 2em;
+  top: 0.5em;
+}
+
+/* line 103, ../sass/reset.scss */
+.socicon:empty {
+  width: 1em;
+}
+
+/* line 107, ../sass/reset.scss */
+.socicon-twitter:before {
+  content: "a";
+}
+
+/* line 108, ../sass/reset.scss */
+.socicon-facebook:before {
+  content: "b";
+}
+
+/* line 109, ../sass/reset.scss */
+.socicon-youtube:before {
+  content: "r";
+}
+
+/* line 110, ../sass/reset.scss */
+.socicon-instagram:before {
+  content: "x";
+}
+
+/* line 115, ../sass/reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+/*.symbol, a.symbol:before {
+    font-family: "MonoSocialIconsFont";
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}*/
+/* line 133, ../sass/reset.scss */
+a {
+  color: #c5a47e;
+  text-decoration: none;
+  line-height: inherit;
+  -webkit-transition: color,0.6s,ease-in;
+  -moz-transition: color,0.6s,ease-in;
+  transition: color, 0.6s, ease-in;
+}
+
+/*a.symbol:before {
+    content: attr(title);
+    margin-right: 0.3em;
+    font-size: 130%;
+}*/
+/* line 150, ../sass/reset.scss */
+h1, h2 {
+  font-family: 'MindBlue',Helvetica Neue,Helvetica,Arial, sans-serif;
+  color: #353535;
+}
+
+/* line 156, ../sass/reset.scss */
+h1, .h1 {
+  margin: 0.6em 0px;
+}
+
+/* line 162, ../sass/reset.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  text-rendering: optimizelegibility;
+  line-height: 1.3;
+  padding: 0;
+  margin: 0;
+}
+
+/* reset */
+/* line 174, ../sass/reset.scss */
+body, html {
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 181, ../sass/reset.scss */
+body {
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  color: #b1aea6;
+  background: #fffcf5;
+  min-height: 800px;
+  -webkit-animation: bugfix infinite 1s;
+}
+
+@-webkit-keyframes bugfix {
+  /* line 190, ../sass/reset.scss */
+  from {
+    padding: 0;
+  }
+
+  /* line 191, ../sass/reset.scss */
+  to {
+    padding: 0;
+  }
+}
+
+/* border-box statt content-box */
+/* line 196, ../sass/reset.scss */
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 204, ../sass/reset.scss */
+.clearfix:before,
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* line 214, ../sass/reset.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 221, ../sass/reset.scss */
+a {
+  color: #ccc;
+  text-decoration: none;
+  display: block;
+}
+
+/* main in uebung container ist nur für die dimensionen zuständig   */
+/* line 230, ../sass/reset.scss */
+.container {
+  padding-top: 1em;
+  background: pink;
+}
+
+/* line 239, ../sass/reset.scss */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+  /* ie8 */
+  box-sizing: border-box;
+}
+
+/* line 250, ../sass/reset.scss */
+iframe, object, embed {
+  max-width: 100%;
+}
+
+/* line 10, ../sass/logo.scss */
+.logo svg path {
+  -webkit-transition: fill 0.8s ease;
+  -moz-transition: fill 0.8s ease;
+  -o-transition: fill 0.8s ease;
+  transition: fill 0.8s ease;
+}
+
+/* line 19, ../sass/logo.scss */
+.logo svg:hover path {
+  fill: #301e00;
+}
+
+/* line 25, ../sass/logo.scss */
+ul.uilogo {
+  position: relative;
+  top: 1em;
+  left: 1em;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  max-width: 14em;
+}
+/* line 35, ../sass/logo.scss */
+ul.uilogo li {
+  display: inline-block;
+  clear: both;
+}
+
+/*.uilogo {
+    text-align: center;
+    vertical-align:middle;
+    ul {
+
+    list-style-type: none;
+    margin:0 0 0 5%;
+    padding:0;
+    	
+    }
+
+    li {
+
+    float:left;	
+    clear:both;
+    }
+	
+}*/
+/* line 65, ../sass/logo.scss */
+#svg_logo {
+  position: relative;
+  display: block;
+  /*float: left;*/
+  /*margin-left: .5em;*/
+  /*min-width: 3em;
+  clear: both;*/
+}
+
+/* line 80, ../sass/logo.scss */
+.font_logo {
+  font: 1.2em "tungsten",helvetica, arial, sans-serif;
+  /*position: absolute;*/
+  text-align: center;
+  color: #968437;
+  line-height: 1.2em;
+  white-space: nowrap;
+  letter-spacing: 0.1em;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: -101%;
+}
+
+/* line 99, ../sass/logo.scss */
+.font_light span.farbe {
+  color: #c5c5c5;
+}
+
+/* line 106, ../sass/logo.scss */
+a.scroll:hover, .uilogo:hover {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* line 112, ../sass/logo.scss */
+a.scroll:hover a.scroll:after, .uilogo:hover a.scroll:after {
+  background-color: #D36940;
+  box-shadow: 0px 0px 33px 0 #d36940;
+}
+
+/* line 117, ../sass/logo.scss */
+a.scroll:hover span.farbe, .uilogo:hover span.farbe {
+  color: #c5a47e;
+}
+
+/* line 121, ../sass/logo.scss */
+header .font_logo span.farbe:nth-of-type(1) {
+  -webkit-transition-delay: 0.1s;
+  -moz-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+/* line 127, ../sass/logo.scss */
+header .font_logo span.farbe:nth-of-type(2) {
+  -webkit-transition-delay: 0.125s;
+  -moz-transition-delay: 0.125s;
+  transition-delay: 0.125s;
+}
+
+/* line 133, ../sass/logo.scss */
+header .font_logo span.farbe:nth-of-type(3) {
+  -webkit-transition-delay: 0.15s;
+  -moz-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+/* line 139, ../sass/logo.scss */
+header .font_logo span.farbe:nth-of-type(4) {
+  -webkit-transition-delay: 0.175s;
+  -moz-transition-delay: 0.175s;
+  transition-delay: 0.175s;
+}
+
+/* line 145, ../sass/logo.scss */
+header .font_logo span.farbe:nth-of-type(5) {
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+/* line 151, ../sass/logo.scss */
+header .font_logo span.farbe:nth-of-type(6) {
+  -webkit-transition-delay: 0.225s;
+  -moz-transition-delay: 0.225s;
+  transition-delay: 0.225s;
+}
+
+/* line 157, ../sass/logo.scss */
+header .font_logo span.farbe:nth-of-type(7) {
+  -webkit-transition-delay: 0.25s;
+  -moz-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+
+/* line 163, ../sass/logo.scss */
+header .font_logo span.farbe:nth-of-type(8) {
+  -webkit-transition-delay: 0.275s;
+  -moz-transition-delay: 0.275s;
+  transition-delay: 0.275s;
+}
+
+/* line 169, ../sass/logo.scss */
+header .font_logo span.farbe:nth-of-type(9) {
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+/* line 175, ../sass/logo.scss */
+header .font_logo span.farbe:nth-of-type(10) {
+  -webkit-transition-delay: 0.325s;
+  -moz-transition-delay: 0.325s;
+  transition-delay: 0.325s;
+}
+
+/* line 181, ../sass/logo.scss */
+header .font_logo span.farbe:nth-of-type(11) {
+  -webkit-transition-delay: 0.35s;
+  -moz-transition-delay: 0.35s;
+  transition-delay: 0.35s;
+}
+
+/* line 187, ../sass/logo.scss */
+header .font_logo span.farbe:nth-of-type(12) {
+  -webkit-transition-delay: 0.375s;
+  -moz-transition-delay: 0.375s;
+  transition-delay: 0.375s;
+}
+
+/* line 193, ../sass/logo.scss */
+header .font_logo span.farbe:nth-of-type(13) {
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+/* line 199, ../sass/logo.scss */
+header .font_logo span.farbe:nth-of-type(14) {
+  -webkit-transition-delay: 0.425s;
+  -moz-transition-delay: 0.425s;
+  transition-delay: 0.425s;
+}
+
+/* line 205, ../sass/logo.scss */
+header .font_logo span.farbe:nth-of-type(15) {
+  -webkit-transition-delay: 0.45s;
+  -moz-transition-delay: 0.45s;
+  transition-delay: 0.45s;
+}
+
+/* line 211, ../sass/logo.scss */
+header .font_logo span.farbe:nth-of-type(16) {
+  -webkit-transition-delay: 0.475s;
+  -moz-transition-delay: 0.475s;
+  transition-delay: 0.475s;
+}
+
+/* line 217, ../sass/logo.scss */
+header .font_logo span.farbe:nth-of-type(17) {
+  -webkit-transition-delay: 0.5s;
+  -moz-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+/* ---------------------  nav desktop ------------------------- */

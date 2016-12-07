@@ -1,0 +1,108 @@
+/* line 2, ../sass/forms.scss */
+input {
+  box-sizing: border-box;
+}
+
+/* line 7, ../sass/forms.scss */
+form.container_nl {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 16, ../sass/forms.scss */
+.fieldset_newsletter {
+  list-style-type: none;
+  border: none;
+  text-align: center;
+}
+
+/* line 26, ../sass/forms.scss */
+#wr_newsletter {
+  position: relative;
+  margin: 3em auto;
+  /*max-width: 30em;*/
+  width: 100%;
+}
+/* line 34, ../sass/forms.scss */
+#wr_newsletter #newsletter {
+  background-color: #fff;
+  width: 100%;
+}
+/* line 40, ../sass/forms.scss */
+#wr_newsletter #btn_submit {
+  background-color: #968437;
+  color: #fff;
+  font: 1em mindblue, Helvetica Neue, Helvetica, Arial, sans-serif;
+  border: none;
+  text-align: center;
+  width: 100%;
+  margin: 0.2em 0 0 0;
+  padding: 0;
+  text-transform: uppercase;
+  line-height: 2em;
+}
+/* line 53, ../sass/forms.scss */
+#wr_newsletter #btn_submit:hover {
+  background-color: #635104;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+/* line 62, ../sass/forms.scss */
+#wr_newsletter input[type="input"], #wr_newsletter input[type="submit"] {
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid #c5c5c5;
+}
+/* line 72, ../sass/forms.scss */
+#wr_newsletter input[type="input"] {
+  font-size: 1em;
+  padding: 10px 0 10px 0;
+  outline: none;
+  text-align: center;
+}
+/* line 75, ../sass/forms.scss */
+#wr_newsletter input[type="input"]:invalid {
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/* line 81, ../sass/forms.scss */
+#wr_newsletter input[type="input"]:required {
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/* line 95, ../sass/forms.scss */
+#wr_newsletter input[type="input"]:focus ~ label, #wr_newsletter input[type="input"]:valid ~ label {
+  top: -40px;
+  font-size: 1.4em;
+  color: #968437;
+}
+/* line 105, ../sass/forms.scss */
+#wr_newsletter input[type="submit"] {
+  line-height: 2em;
+}
+/* line 111, ../sass/forms.scss */
+#wr_newsletter .highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+/* line 126, ../sass/forms.scss */
+#wr_newsletter label {
+  color: #999;
+  /*font-size: 1em;*/
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  -webkit-transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -ms-transition: 0.2s ease all;
+  -o-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
